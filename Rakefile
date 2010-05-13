@@ -19,7 +19,7 @@ spec = Gem::Specification.new do |s|
   s.summary           = "A Ruby API for the National Rail website"
   s.author            = "James Mead"
   s.email             = "james@floehopper.org"
-  s.homepage          = "http://blog.floehopper.org/"
+  # s.homepage          = ""
 
   s.has_rdoc          = true
   # You should probably have a README of some kind. Change the filename
