@@ -39,6 +39,10 @@ spec = Gem::Specification.new do |s|
 
   # If your tests use any gems, include them here
   # s.add_development_dependency("mocha") # for example
+
+  # If you want to publish automatically to rubyforge, you'll may need
+  # to tweak this, and the publishing task below too.
+  s.rubyforge_project = "national-rail"
 end
 
 # This task actually builds the gem. We also regenerate a static
