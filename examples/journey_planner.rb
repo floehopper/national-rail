@@ -1,4 +1,5 @@
-require "national_rail"
+require "rubygems"
+require "national-rail"
 require "active_support"
 
 Time.zone = "London"

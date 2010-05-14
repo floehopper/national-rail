@@ -18,7 +18,7 @@ h2. Notes
 h2. Journey Planner
 
 <pre>
-  require "national_rail"
+  require "national-rail"
   require "active_support"
 
   Time.zone = "London"
@@ -102,7 +102,7 @@ h2. Journey Planner
 h2. Live Departure Boards
 
 <pre>
-  require "national_rail"
+  require "national-rail"
   
   boards = NationalRail::LiveDepartureBoards.new
   summary_rows = boards.summary(:from => "KGX", :to => "EDB")
@@ -261,7 +261,7 @@ h2. Live Departure Boards
 h2. Station List
 
 <pre>
-  require "national_rail"
+  require "national-rail"
 
   stations = NationalRail::StationList.new
   stations.each do |name, code|

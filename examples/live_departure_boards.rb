@@ -1,5 +1,5 @@
 require "rubygems"
-require "national_rail"
+require "national-rail"
 
 boards = NationalRail::LiveDepartureBoards.new
 summary_rows = boards.summary(:from => "KGX", :to => "EDB")

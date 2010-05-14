@@ -1,5 +1,5 @@
 require "rubygems"
-require "national_rail"
+require "national-rail"
 
 stations = NationalRail::StationList.new
 stations.each do |name, code|

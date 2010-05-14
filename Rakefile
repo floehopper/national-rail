@@ -14,7 +14,7 @@ end
 spec = Gem::Specification.new do |s|
 
   # Change these as appropriate
-  s.name              = "national_rail"
+  s.name              = "national-rail"
   s.version           = "0.1.0"
   s.summary           = "A Ruby API for the National Rail website"
   s.author            = "James Mead"
@@ -70,4 +70,47 @@ end
 desc 'Clear out RDoc and generated packages'
 task :clean => [:clobber_rdoc, :clobber_package] do
   rm "#{spec.name}.gemspec"
+end
+
+# If you want to publish to RubyForge automatically, here's a simple 
+# task to help do that. If you don't, just get rid of this.
+# Be sure to set up your Rubyforge account details with the Rubyforge
+# gem; you'll need to run `rubyforge setup` and `rubyforge config` at
+# the very least.
+begin
+  require "rake/contrib/sshpublisher"
+  namespace :rubyforge do
+    
+    desc "Release gem and RDoc documentation to RubyForge"
+    task :release => ["rubyforge:release:gem", "rubyforge:release:docs"]
+    
+    namespace :release do
+      desc "Release a new version of this gem"
+      task :gem => [:package] do
+        require 'rubyforge'
+        rubyforge = RubyForge.new
+        rubyforge.configure
+        rubyforge.login
+        rubyforge.userconfig['release_notes'] = spec.summary
+        path_to_gem = File.join(File.dirname(__FILE__), "pkg", "#{spec.name}-#{spec.version}.gem")
+        puts "Publishing #{spec.name}-#{spec.version.to_s} to Rubyforge..."
+        rubyforge.add_release(spec.rubyforge_project, spec.name, spec.version.to_s, path_to_gem)
+      end
+    
+      desc "Publish RDoc to RubyForge."
+      task :docs => [:rdoc] do
+        config = YAML.load(
+          File.read(File.expand_path('~/.rubyforge/user-config.yml'))
+        )
+ 
+        host = "#{config['username']}@rubyforge.org"
+        remote_dir = "/var/www/gforge-projects/national-rail/" # Should be the same as the rubyforge project name
+        local_dir = 'rdoc'
+ 
+        Rake::SshDirPublisher.new(host, remote_dir, local_dir).upload
+      end
+    end
+  end
+rescue LoadError
+  puts "Rake SshDirPublisher is unavailable or your rubyforge environment is not configured."
 end
