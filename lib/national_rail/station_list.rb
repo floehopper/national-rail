@@ -3,7 +3,7 @@ require 'hpricot'
 
 module NationalRail
 
-  class Stations
+  class StationList
 
     class HpricotParser < Mechanize::Page
       attr_reader :doc

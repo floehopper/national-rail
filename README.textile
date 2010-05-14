@@ -6,7 +6,7 @@ h2. Components
 
 * Journey Planner
 * Live Departure Boards
-* Stations
+* Station List
 
 h2. Notes
 
@@ -258,12 +258,12 @@ h2. Live Departure Boards
    :actual=>{:time=>"_"}}
 </pre>
 
-h2. Stations
+h2. Station List
 
 <pre>
   require "national_rail"
 
-  stations = NationalRail::Stations.new
+  stations = NationalRail::StationList.new
   stations.each do |name, code|
     puts "#{name} (#{code})"
   end
