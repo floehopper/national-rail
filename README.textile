@@ -2,7 +2,17 @@ h1. NationalRail
 
 A Ruby API for the National Rail website.
 
-h2. JourneyPlanner
+* "Journey Planner":#jp
+* "Live Departure Boards":#ldb
+* "Stations":#st
+* Not all functionality is available yet.
+* No tests.
+* Likely to be brittle if National Rail website changes.
+* Working as of 14 May 2010.
+
+
+
+h2(jp). JourneyPlanner
 
 <pre>
   require "national_rail"
@@ -53,92 +63,7 @@ h2. JourneyPlanner
       :station_code=>"BWK",
       :arrives_at=>Sun, 30 May 2010 14:17:00 BST +01:00}]}
 
-  Train departing at: 2010-05-30 11:00:00 +0100 with 0 changes...
-  {:initial_stop=>
-    {:departs_at=>Sun, 30 May 2010 11:00:00 BST +01:00, :station_code=>"KGX"},
-   :origins=>["London Kings Cross"],
-   :final_stop=>
-    {:station_code=>"EDB", :arrives_at=>Sun, 30 May 2010 15:40:00 BST +01:00},
-   :destinations=>["Aberdeen"],
-   :stops=>
-    [{:departs_at=>Sun, 30 May 2010 11:45:00 BST +01:00,
-      :station_code=>"PBO",
-      :arrives_at=>Sun, 30 May 2010 11:44:00 BST +01:00},
-     {:departs_at=>Sun, 30 May 2010 12:38:00 BST +01:00,
-      :station_code=>"DON",
-      :arrives_at=>Sun, 30 May 2010 12:37:00 BST +01:00},
-     {:departs_at=>Sun, 30 May 2010 13:09:00 BST +01:00,
-      :station_code=>"YRK",
-      :arrives_at=>Sun, 30 May 2010 13:02:00 BST +01:00},
-     {:departs_at=>Sun, 30 May 2010 13:37:00 BST +01:00,
-      :station_code=>"DAR",
-      :arrives_at=>Sun, 30 May 2010 13:37:00 BST +01:00},
-     {:departs_at=>Sun, 30 May 2010 13:55:00 BST +01:00,
-      :station_code=>"DHM",
-      :arrives_at=>Sun, 30 May 2010 13:55:00 BST +01:00},
-     {:departs_at=>Sun, 30 May 2010 14:14:00 BST +01:00,
-      :station_code=>"NCL",
-      :arrives_at=>Sun, 30 May 2010 14:12:00 BST +01:00}]}
-
-  Train departing at: 2010-05-30 12:00:00 +0100 with 0 changes...
-  {:initial_stop=>
-    {:departs_at=>Sun, 30 May 2010 12:00:00 BST +01:00, :station_code=>"KGX"},
-   :origins=>["London Kings Cross"],
-   :final_stop=>
-    {:station_code=>"EDB", :arrives_at=>Sun, 30 May 2010 16:43:00 BST +01:00},
-   :destinations=>["Edinburgh"],
-   :stops=>
-    [{:departs_at=>Sun, 30 May 2010 12:44:00 BST +01:00,
-      :station_code=>"PBO",
-      :arrives_at=>Sun, 30 May 2010 12:44:00 BST +01:00},
-     {:departs_at=>Sun, 30 May 2010 13:14:00 BST +01:00,
-      :station_code=>"NNG",
-      :arrives_at=>Sun, 30 May 2010 13:14:00 BST +01:00},
-     {:departs_at=>Sun, 30 May 2010 13:40:00 BST +01:00,
-      :station_code=>"DON",
-      :arrives_at=>Sun, 30 May 2010 13:39:00 BST +01:00},
-     {:departs_at=>Sun, 30 May 2010 14:06:00 BST +01:00,
-      :station_code=>"YRK",
-      :arrives_at=>Sun, 30 May 2010 14:04:00 BST +01:00},
-     {:departs_at=>Sun, 30 May 2010 14:25:00 BST +01:00,
-      :station_code=>"NTR",
-      :arrives_at=>Sun, 30 May 2010 14:25:00 BST +01:00},
-     {:departs_at=>Sun, 30 May 2010 14:38:00 BST +01:00,
-      :station_code=>"DAR",
-      :arrives_at=>Sun, 30 May 2010 14:38:00 BST +01:00},
-     {:departs_at=>Sun, 30 May 2010 14:56:00 BST +01:00,
-      :station_code=>"DHM",
-      :arrives_at=>Sun, 30 May 2010 14:56:00 BST +01:00},
-     {:departs_at=>Sun, 30 May 2010 15:14:00 BST +01:00,
-      :station_code=>"NCL",
-      :arrives_at=>Sun, 30 May 2010 15:12:00 BST +01:00},
-     {:departs_at=>Sun, 30 May 2010 15:57:00 BST +01:00,
-      :station_code=>"BWK",
-      :arrives_at=>Sun, 30 May 2010 15:57:00 BST +01:00}]}
-
-  Train departing at: 2010-05-30 12:30:00 +0100 with 0 changes...
-  {:initial_stop=>
-    {:departs_at=>Sun, 30 May 2010 12:30:00 BST +01:00, :station_code=>"KGX"},
-   :origins=>["London Kings Cross"],
-   :final_stop=>
-    {:station_code=>"EDB", :arrives_at=>Sun, 30 May 2010 17:00:00 BST +01:00},
-   :destinations=>["Inverness"],
-   :stops=>
-    [{:departs_at=>Sun, 30 May 2010 13:15:00 BST +01:00,
-      :station_code=>"PBO",
-      :arrives_at=>Sun, 30 May 2010 13:14:00 BST +01:00},
-     {:departs_at=>Sun, 30 May 2010 14:09:00 BST +01:00,
-      :station_code=>"DON",
-      :arrives_at=>Sun, 30 May 2010 14:07:00 BST +01:00},
-     {:departs_at=>Sun, 30 May 2010 14:35:00 BST +01:00,
-      :station_code=>"YRK",
-      :arrives_at=>Sun, 30 May 2010 14:33:00 BST +01:00},
-     {:departs_at=>Sun, 30 May 2010 15:03:00 BST +01:00,
-      :station_code=>"DAR",
-      :arrives_at=>Sun, 30 May 2010 15:03:00 BST +01:00},
-     {:departs_at=>Sun, 30 May 2010 15:34:00 BST +01:00,
-      :station_code=>"NCL",
-      :arrives_at=>Sun, 30 May 2010 15:33:00 BST +01:00}]}
+  ...
 
   Train departing at: 2010-05-30 13:00:00 +0100 with 0 changes...
   {:initial_stop=>
@@ -171,7 +96,7 @@ h2. JourneyPlanner
       :arrives_at=>Sun, 30 May 2010 16:10:00 BST +01:00}]}
 </pre>
 
-h2. Live Departure Boards
+h2(ldb). Live Departure Boards
 
 <pre>
   require "national_rail"
@@ -221,54 +146,9 @@ h2. Live Departure Boards
      :name=>"Stevenage",
      :code=>"SVG"},
    :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"17:34"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=GRA",
-     :name=>"Grantham",
-     :code=>"GRA"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"17:46"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=NNG",
-     :name=>"Newark North Gate",
-     :code=>"NNG"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"18:09"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=DON",
-     :name=>"Doncaster",
-     :code=>"DON"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"18:33"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=YRK",
-     :name=>"York",
-     :code=>"YRK"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"19:00"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=NTR",
-     :name=>"Northallerton",
-     :code=>"NTR"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"19:13"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=DAR",
-     :name=>"Darlington",
-     :code=>"DAR"},
-   :actual=>{:time=>"_"}}
+  
+  ...
+  
   {:expected=>{:time=>"On time"},
    :timetabled=>{:direction=>"arrival", :time=>"19:31"},
    :station=>
@@ -293,172 +173,8 @@ h2. Live Departure Boards
      :name=>"Edinburgh",
      :code=>"EDB"},
    :actual=>{:time=>"_"}}
-
-  {:timetabled_at=>"17:00",
-   :expected_at=>"Starts here",
-   :platform=>"\302\240",
-   :details=>
-    {:url=>"train.aspx?C=KGX&T=KNGX++++&J=50615&Y=D&S=EDB&R=0&A=0",
-     :link=>
-      #<Mechanize::Page::Link
-       "Details"
-       "train.aspx?C=KGX&T=KNGX++++&J=50615&Y=D&S=EDB&R=0&A=0">},
-   :operator=>
-    {:url=>"http://www.nationalrail.co.uk/companies/?atocCode=GR",
-     :name=>"East Coast",
-     :code=>"GR"},
-   :destination=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=EDB",
-     :name=>"Edinburgh",
-     :code=>"EDB"}}
-  {:expected=>{:time=>"No report"},
-   :timetabled=>{:direction=>"departure", :time=>"17:00"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=KGX",
-     :name=>"London Kings Cross",
-     :code=>"KGX"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"18:49"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=YRK",
-     :name=>"York",
-     :code=>"YRK"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"19:20"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=DAR",
-     :name=>"Darlington",
-     :code=>"DAR"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"19:51"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=NCL",
-     :name=>"Newcastle",
-     :code=>"NCL"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"21:20"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=EDB",
-     :name=>"Edinburgh",
-     :code=>"EDB"},
-   :actual=>{:time=>"_"}}
-
-  {:timetabled_at=>"17:30",
-   :expected_at=>"Starts here",
-   :platform=>"\302\240",
-   :details=>
-    {:url=>"train.aspx?C=KGX&T=KNGX++++&J=50681&Y=D&S=EDB&R=0&A=0",
-     :link=>
-      #<Mechanize::Page::Link
-       "Details"
-       "train.aspx?C=KGX&T=KNGX++++&J=50681&Y=D&S=EDB&R=0&A=0">},
-   :operator=>
-    {:url=>"http://www.nationalrail.co.uk/companies/?atocCode=GR",
-     :name=>"East Coast",
-     :code=>"GR"},
-   :destination=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=EDB",
-     :name=>"Edinburgh",
-     :code=>"EDB"}}
-  {:expected=>{:time=>"No report"},
-   :timetabled=>{:direction=>"departure", :time=>"17:30"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=KGX",
-     :name=>"London Kings Cross",
-     :code=>"KGX"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"18:16"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=PBO",
-     :name=>"Peterborough",
-     :code=>"PBO"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"19:23"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=YRK",
-     :name=>"York",
-     :code=>"YRK"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"19:52"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=DAR",
-     :name=>"Darlington",
-     :code=>"DAR"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"20:10"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=DHM",
-     :name=>"Durham",
-     :code=>"DHM"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"20:26"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=NCL",
-     :name=>"Newcastle",
-     :code=>"NCL"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"20:43"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=MPT",
-     :name=>"Morpeth",
-     :code=>"MPT"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"20:59"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=ALM",
-     :name=>"Alnmouth",
-     :code=>"ALM"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"21:22"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=BWK",
-     :name=>"Berwick-upon-Tweed",
-     :code=>"BWK"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"21:46"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=DUN",
-     :name=>"Dunbar",
-     :code=>"DUN"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"22:14"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=EDB",
-     :name=>"Edinburgh",
-     :code=>"EDB"},
-   :actual=>{:time=>"_"}}
+   
+  ...
 
   {:timetabled_at=>"18:00",
    :expected_at=>"Starts here",
@@ -486,30 +202,9 @@ h2. Live Departure Boards
      :name=>"London Kings Cross",
      :code=>"KGX"},
    :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"19:28"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=DON",
-     :name=>"Doncaster",
-     :code=>"DON"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"19:51"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=YRK",
-     :name=>"York",
-     :code=>"YRK"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"20:22"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=DAR",
-     :name=>"Darlington",
-     :code=>"DAR"},
-   :actual=>{:time=>"_"}}
+   
+  ...
+   
   {:expected=>{:time=>"On time"},
    :timetabled=>{:direction=>"arrival", :time=>"20:52"},
    :station=>
@@ -558,4 +253,44 @@ h2. Live Departure Boards
      :name=>"Glasgow Central",
      :code=>"GLC"},
    :actual=>{:time=>"_"}}
+</pre>
+
+h2(st). Stations
+
+<pre>
+  require "national_rail"
+
+  stations = NationalRail::Stations.new
+  stations.each do |name, code|
+    puts "#{name} (#{code})"
+  end
+</pre>
+
+<pre>
+  Abbey Wood (ABW)
+  Aber (ABE)
+  Abercynon (ACY)
+  Aberdare (ABA)
+  Aberdeen (ABD)
+  Aberdour (AUR)
+  Aberdovey (AVY)
+  Abererch (ABH)
+  Abergavenny (AGV)
+  Abergele & Pensarn (AGL)
+  Aberystwyth (AYW)
+  Accrington (ACR)
+  
+  ...
+  
+  Yatton (YAT)
+  Yeoford (YEO)
+  Yeovil Junction (YVJ)
+  Yeovil Pen Mill (YVP)
+  Yetminster (YET)
+  Ynyswen (YNW)
+  Yoker (YOK)
+  York (YRK)
+  Yorton (YRT)
+  Ystrad Mynach (YSM)
+  Ystrad Rhondda (YSR)
 </pre>
