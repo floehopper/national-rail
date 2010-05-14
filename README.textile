@@ -13,7 +13,7 @@ h2. Notes
 * Likely to be brittle if National Rail website changes.
 * All working as of 14 May 2010.
 
-h2(#journey-planner). JourneyPlanner
+<h2 id="journey-planner">Journey Planner</h2>
 
 <pre>
   require "national_rail"
@@ -97,7 +97,7 @@ h2(#journey-planner). JourneyPlanner
       :arrives_at=>Sun, 30 May 2010 16:10:00 BST +01:00}]}
 </pre>
 
-h2(#live-departure-boards). Live Departure Boards
+<h2 id="live-departure-boards">Live Departure Boards</h2>
 
 <pre>
   require "national_rail"
@@ -256,7 +256,7 @@ h2(#live-departure-boards). Live Departure Boards
    :actual=>{:time=>"_"}}
 </pre>
 
-h2(#stations). Stations
+<h2 id="stations">Stations</h2>
 
 <pre>
   require "national_rail"
