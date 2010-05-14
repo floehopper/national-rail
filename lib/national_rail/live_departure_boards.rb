@@ -14,6 +14,7 @@ module NationalRail
     end
     
     class SummaryRow
+      attr_reader :attributes
       def initialize(agent, attributes)
         @agent, @attributes = agent, attributes
       end
