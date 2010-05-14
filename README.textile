@@ -2,17 +2,18 @@ h1. NationalRail
 
 A Ruby API for the National Rail website.
 
-* "Journey Planner":#jp
-* "Live Departure Boards":#ldb
-* "Stations":#st
-* Not all functionality is available yet.
-* No tests.
+* "Journey Planner":#journey-planner
+* "Live Departure Boards":#live-departure-boards
+* "Stations":#stations
+
+h2. Notes
+
+* Not all website functionality is available yet.
+* There are no tests - so use at your own risk.
 * Likely to be brittle if National Rail website changes.
-* Working as of 14 May 2010.
+* All working as of 14 May 2010.
 
-
-
-h2(jp). JourneyPlanner
+h2(#journey-planner). JourneyPlanner
 
 <pre>
   require "national_rail"
@@ -96,7 +97,7 @@ h2(jp). JourneyPlanner
       :arrives_at=>Sun, 30 May 2010 16:10:00 BST +01:00}]}
 </pre>
 
-h2(ldb). Live Departure Boards
+h2(#live-departure-boards). Live Departure Boards
 
 <pre>
   require "national_rail"
@@ -255,7 +256,7 @@ h2(ldb). Live Departure Boards
    :actual=>{:time=>"_"}}
 </pre>
 
-h2(st). Stations
+h2(#stations). Stations
 
 <pre>
   require "national_rail"
