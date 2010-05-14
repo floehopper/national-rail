@@ -297,3 +297,7 @@ h2. Station List
   Ystrad Mynach (YSM)
   Ystrad Rhondda (YSR)
 </pre>
+
+h2. License
+
+This code is free to use under the terms of the MIT licence.
