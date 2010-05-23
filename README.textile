@@ -14,6 +14,7 @@ h2. Notes
 * There are no tests - so use at your own risk.
 * Likely to be brittle if National Rail website changes.
 * All working as of 14 May 2010.
+* Thanks to "Michael Pritchard":http://bbc.blueghost.co.uk/earth/ for station location data.
 
 h2. Journey Planner
 
@@ -264,38 +265,38 @@ h2. Station List
   require "national-rail"
 
   stations = NationalRail::StationList.new
-  stations.each do |name, code|
-    puts "#{name} (#{code})"
+  stations.each do |name, code, latitude, longitude|
+    puts "#{name} (#{code}) @ #{latitude},#{longitude}"
   end
 </pre>
 
 <pre>
-  Abbey Wood (ABW)
-  Aber (ABE)
-  Abercynon (ACY)
-  Aberdare (ABA)
-  Aberdeen (ABD)
-  Aberdour (AUR)
-  Aberdovey (AVY)
-  Abererch (ABH)
-  Abergavenny (AGV)
-  Abergele & Pensarn (AGL)
-  Aberystwyth (AYW)
-  Accrington (ACR)
+  Abbey Wood (ABW) @ 51.490957,0.120287
+  Aber (ABE) @ 51.575382,-3.230133
+  Abercynon (ACY) @ 51.643007,-3.329765
+  Aberdare (ABA) @ 51.714723,-3.441704
+  Aberdeen (ABD) @ 57.143591,-2.098804
+  Aberdour (AUR) @ 56.054604,-3.300914
+  Aberdovey (AVY) @ 52.544322,-4.055988
+  Abererch (ABH) @ 52.898292,-4.37505
+  Abergavenny (AGV) @ 51.81767,-3.008827
+  Abergele & Pensarn (AGL) @ 53.294721,-3.582118
+  Aberystwyth (AYW) @ 52.41396,-4.081767
+  Accrington (ACR) @ 53.752973,-2.369535
   
   ...
   
-  Yatton (YAT)
-  Yeoford (YEO)
-  Yeovil Junction (YVJ)
-  Yeovil Pen Mill (YVP)
-  Yetminster (YET)
-  Ynyswen (YNW)
-  Yoker (YOK)
-  York (YRK)
-  Yorton (YRT)
-  Ystrad Mynach (YSM)
-  Ystrad Rhondda (YSR)
+  Yatton (YAT) @ 51.390771,-2.827513
+  Yeoford (YEO) @ 50.77603,-3.726381
+  Yeovil Junction (YVJ) @ 50.923943,-2.612948
+  Yeovil Pen Mill (YVP) @ 50.944343,-2.612981
+  Yetminster (YET) @ 50.895286,-2.573571
+  Ynyswen (YNW) @ 51.664737,-3.521422
+  Yoker (YOK) @ 55.892785,-4.387607
+  York (YRK) @ 53.958243,-1.092918
+  Yorton (YRT) @ 52.808903,-2.7365
+  Ystrad Mynach (YSM) @ 51.641017,-3.241498
+  Ystrad Rhondda (YSR) @ 51.643441,-3.466631
 </pre>
 
 h2. License
