@@ -1,0 +1,4 @@
+.rvmrc
+pkg
+rdoc
+*.gemspec
