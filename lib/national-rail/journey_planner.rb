@@ -43,6 +43,7 @@ module NationalRail
       end
 
       def details
+        return if number_of_changes.to_i > 0
         @agent.transact do
           parse_details(@link.click, @date)
         end
@@ -50,7 +51,7 @@ module NationalRail
 
       def parse_details(page, date)
         details = {}
-        description = (page.doc/"table#journeyLegDetails tbody tr.lastRow td[@colspan=6] div").first.inner_text.gsub(/\s+/, " ").strip
+        description = (page.doc/"table#journeyLegDetails tbody tr.lastRow td[@colspan=6] div").last.inner_text.gsub(/\s+/, " ").strip
         origins, destinations = (/from (.*) to (.*)/.match(description)[1,2]).map{ |s| s.split(",").map(&:strip) }
         details[:origins], details[:destinations] = origins, destinations
         parser = TimeParser.new(date)
@@ -102,7 +103,9 @@ module NationalRail
     def plan(options = {})
       summary_rows = []
       @agent.get("http://www.nationalrail.co.uk/") do |home_page|
+        button = nil
         times_page = home_page.form_with(:action => "http://ojp.nationalrail.co.uk/en/s/planjourney/plan") do |form|
+          button = form.buttons.last
           form["jpState"] = "single"
           form["commandName"] = "journeyPlannerCommand"
           form["from.searchTerm"] = options[:from]
@@ -124,7 +127,7 @@ module NationalRail
           form["_lookForSleeper"] = "on"
           form["_directTrains"] = "on"
           form["_includeOvertakenTrains"] = "on"
-        end.click_button
+        end.click_button(button)
 
         if (times_page.doc/"error-message").any?
           raise (times_page.doc/"error-message").first.inner_text.gsub(/\s+/, " ").strip
