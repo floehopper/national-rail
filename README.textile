@@ -12,9 +12,9 @@ h2. Notes
 
 * Not all website functionality is available yet.
 * There are no tests - so use at your own risk.
-* Doesn't handle details for journeys with changes.
+* Journey Planner doesn't handle details for journeys with changes.
 * Likely to be brittle if National Rail website changes.
-* All working as of 03 Nov 2010.
+* All working as of 04 Nov 2010.
 * Thanks to "Michael Pritchard":http://bbc.blueghost.co.uk/earth/ for station location data.
 
 h2. Journey Planner
