@@ -2,12 +2,12 @@ require "rubygems"
 require "national-rail"
 
 boards = NationalRail::LiveDepartureBoards.new
-summary_rows = boards.summary(:from => "KGX", :to => "EDB")
+summary_rows = boards.summary(:type => :departures, :from => "York", :to => "London Kings Cross")
 summary_rows.each do |row|
   puts
-  pp row.attributes
+  p row.attributes
   stops = row.details
   stops.each do |stop|
-    pp stop
+    p stop
   end
 end

@@ -103,12 +103,16 @@ h2. Journey Planner
 
 h2. Live Departure Boards
 
+h3. Departures
+
 <pre>
   require "national-rail"
-  
+
   boards = NationalRail::LiveDepartureBoards.new
-  summary_rows = boards.summary(:from => "KGX", :to => "EDB")
+  summary_rows = boards.summary(:type => :arrivals, :from => "York", :to => "London Kings Cross")
   summary_rows.each do |row|
+    puts
+    p row.attributes
     stops = row.details
     stops.each do |stop|
       p stop
@@ -117,147 +121,102 @@ h2. Live Departure Boards
 </pre>
 
 <pre>
-  {:timetabled_at=>"16:30",
-   :expected_at=>"Starts here",
-   :platform=>"\302\240",
-   :details=>
-    {:url=>"train.aspx?C=KGX&T=KNGX++++&J=50611&Y=D&S=EDB&R=0&A=0",
-     :link=>
-      #<Mechanize::Page::Link
-       "Details"
-       "train.aspx?C=KGX&T=KNGX++++&J=50611&Y=D&S=EDB&R=0&A=0">},
-   :operator=>
-    {:url=>"http://www.nationalrail.co.uk/companies/?atocCode=GR",
-     :name=>"East Coast",
-     :code=>"GR"},
-   :destination=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=EDB",
-     :name=>"Edinburgh",
-     :code=>"EDB"}}
-  {:expected=>{:time=>"No report"},
-   :timetabled=>{:direction=>"departure", :time=>"16:30"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=KGX",
-     :name=>"London Kings Cross",
-     :code=>"KGX"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"16:49"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=SVG",
-     :name=>"Stevenage",
-     :code=>"SVG"},
-   :actual=>{:time=>"_"}}
-  
-  ...
-  
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"19:31"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=DHM",
-     :name=>"Durham",
-     :code=>"DHM"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"19:49"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=NCL",
-     :name=>"Newcastle",
-     :code=>"NCL"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"21:15"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=EDB",
-     :name=>"Edinburgh",
-     :code=>"EDB"},
-   :actual=>{:time=>"_"}}
-   
-  ...
+  {:status=>["17:40", "12 mins late"], :origin=>"Newcastle", :platform=>"", :due=>"17:28", :service_id=>"nWwWcnOh4QGgGZ7mKtdcXQ=="}
+  {:station=>"Newcastle", :status=>["Departed", "On time"], :platform=>"", :departs=>"14:05"}
+  {:station=>"Durham", :status=>["Departed", "3 mins late"], :platform=>"", :departs=>"14:17"}
+  {:station=>"Darlington", :status=>["Departed", "4 mins late"], :platform=>"", :departs=>"14:35"}
+  {:station=>"Northallerton", :status=>["Departed", "6 mins late"], :platform=>"", :departs=>"14:46"}
+  {:station=>"York", :status=>["Departed", "4 mins late"], :platform=>"", :departs=>"15:11"}
+  {:station=>"Doncaster", :status=>["Departed", "6 mins late"], :platform=>"", :departs=>"15:36"}
+  {:station=>"Retford", :status=>["Departed", "10 mins late"], :platform=>"", :departs=>"15:51"}
+  {:station=>"Newark North Gate", :status=>["Departed", "12 mins late"], :platform=>"", :departs=>"16:06"}
+  {:station=>"Grantham", :status=>["Departed", "12 mins late"], :platform=>"", :departs=>"16:19"}
+  {:station=>"London Kings Cross", :status=>["17:40", "12 mins late"], :platform=>"", :departs=>"17:28"}
 
-  {:timetabled_at=>"18:00",
-   :expected_at=>"Starts here",
-   :platform=>"\302\240",
-   :details=>
-    {:url=>"train.aspx?C=KGX&T=KNGX++++&J=50687&Y=D&S=EDB&R=0&A=0",
-     :link=>
-      #<Mechanize::Page::Link
-       "Details"
-       "train.aspx?C=KGX&T=KNGX++++&J=50687&Y=D&S=EDB&R=0&A=0">},
-   :operator=>
-    {:url=>"http://www.nationalrail.co.uk/companies/?atocCode=GR",
-     :name=>"East Coast",
-     :code=>"GR"},
-   :destination=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=GLC",
-     :name=>"Glasgow Central",
-     :code=>"GLC"}}
-  {:expected=>{:time=>"No report"},
-   :timetabled=>{:direction=>"departure", :time=>"18:00"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=KGX",
-     :name=>"London Kings Cross",
-     :code=>"KGX"},
-   :actual=>{:time=>"_"}}
-   
-  ...
-   
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"20:52"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=NCL",
-     :name=>"Newcastle",
-     :code=>"NCL"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"21:37"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=BWK",
-     :name=>"Berwick-upon-Tweed",
-     :code=>"BWK"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"22:23"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=EDB",
-     :name=>"Edinburgh",
-     :code=>"EDB"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"22:30"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=HYM",
-     :name=>"Haymarket",
-     :code=>"HYM"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"23:10"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=MTH",
-     :name=>"Motherwell",
-     :code=>"MTH"},
-   :actual=>{:time=>"_"}}
-  {:expected=>{:time=>"On time"},
-   :timetabled=>{:direction=>"arrival", :time=>"23:32"},
-   :station=>
-    {:url=>
-      "http://www.nationalrail.co.uk/stations/index.html?a=findStation&station_query=GLC",
-     :name=>"Glasgow Central",
-     :code=>"GLC"},
-   :actual=>{:time=>"_"}}
+  {:status=>["17:48", "7 mins late"], :origin=>"Glasgow Central", :platform=>"", :due=>"17:41", :service_id=>"O0kuecMXx+V4XAXTnIKGbA=="}
+  {:station=>"Glasgow Central", :status=>["Departed", "On time"], :platform=>"", :departs=>"11:50"}
+  {:station=>"Motherwell", :status=>["Departed", "On time"], :platform=>"", :departs=>"12:06"}
+  {:station=>"Haymarket", :status=>["Departed", "On time"], :platform=>"", :departs=>"12:49"}
+  {:station=>"Edinburgh", :status=>["Departed", "On time"], :platform=>"", :departs=>"13:00"}
+  {:station=>"Berwick-upon-Tweed", :status=>["Departed", "8 mins late"], :platform=>"", :departs=>"13:39"}
+  {:station=>"Newcastle", :status=>["Departed", "On time"], :platform=>"", :departs=>"14:34"}
+  {:station=>"Darlington", :status=>["Departed", "3 mins late"], :platform=>"", :departs=>"15:02"}
+  {:station=>"York", :status=>["Departed", "On time"], :platform=>"", :departs=>"15:35"}
+  {:station=>"Doncaster", :status=>["Departed", "On time"], :platform=>"", :departs=>"16:00"}
+  {:station=>"Peterborough", :status=>["Departed", "11 mins late"], :platform=>"", :departs=>"16:48"}
+  {:station=>"London Kings Cross", :status=>["17:48", "7 mins late"], :platform=>"", :departs=>"17:41"}
+
+  {:status=>["18:18", "14 mins late"], :origin=>"Newcastle", :platform=>"", :due=>"18:04", :service_id=>"wlmXSLpJUnlxkKVOjjReDw=="}
+  {:station=>"Newcastle", :status=>["Departed", "On time"], :platform=>"", :departs=>"14:55"}
+  {:station=>"Durham", :status=>["Departed", "4 mins late"], :platform=>"", :departs=>"15:07"}
+  {:station=>"Darlington", :status=>["Departed", "8 mins late"], :platform=>"", :departs=>"15:25"}
+  {:station=>"York", :status=>["Departed", "7 mins late"], :platform=>"", :departs=>"15:54"}
+  {:station=>"Grantham", :status=>["Departed", "20 mins late"], :platform=>"", :departs=>"16:44"}
+  {:station=>"Peterborough", :status=>["17:24", "20 mins late"], :platform=>"", :departs=>"17:04"}
+  {:station=>"Stevenage", :status=>["17:51", "17 mins late"], :platform=>"", :departs=>"17:34"}
+  {:station=>"London Kings Cross", :status=>["18:18", "14 mins late"], :platform=>"", :departs=>"18:04"}
+
+  {:status=>["On time"], :origin=>"Edinburgh", :platform=>"", :due=>"18:28", :service_id=>"Sejy3zPbNyIK5QMDwZ7ZdA=="}
+  {:station=>"Edinburgh", :status=>["Departed", "On time"], :platform=>"", :departs=>"14:00"}
+  {:station=>"Berwick-upon-Tweed", :status=>["Departed", "10 mins late"], :platform=>"", :departs=>"14:39"}
+  {:station=>"Newcastle", :status=>["Departed", "13 mins late"], :platform=>"", :departs=>"15:30"}
+  {:station=>"Darlington", :status=>["Departed", "10 mins late"], :platform=>"", :departs=>"16:02"}
+  {:station=>"York", :status=>["Departed", "9 mins late"], :platform=>"", :departs=>"16:32"}
+  {:station=>"London Kings Cross", :status=>["On time", ""], :platform=>"", :departs=>"18:28"}
+</pre>
+
+h3. Arrivals
+
+<pre>
+  require "national-rail"
+
+  boards = NationalRail::LiveDepartureBoards.new
+  summary_rows = boards.summary(:type => :departures, :from => "York", :to => "London Kings Cross")
+  summary_rows.each do |row|
+    puts
+    p row.attributes
+    stops = row.details
+    stops.each do |stop|
+      p stop
+    end
+  end
+</pre>
+
+<pre>
+  {:destination=>"London Kings Cross", :status=>["17:25", "4 mins late"], :platform=>"3", :due=>"17:21", :service_id=>"TeAdv6Eygk3YYKcj#1dLKQ=="}
+  {:station=>"Glasgow Central", :status=>["Departed", "On time"], :platform=>"", :departs=>"13:50"}
+  {:station=>"Motherwell", :status=>["Departed", "4 mins late"], :platform=>"", :departs=>"14:05"}
+  {:station=>"Haymarket", :status=>["Departed", "4 mins late"], :platform=>"", :departs=>"14:49"}
+  {:station=>"Edinburgh", :status=>["Departed", "On time"], :platform=>"", :departs=>"15:00"}
+  {:station=>"Newcastle", :status=>["Departed", "4 mins late"], :platform=>"", :departs=>"16:28"}
+  {:station=>"York", :status=>["17:25", "4 mins late"], :platform=>"3", :departs=>"17:21"}
+  {:station=>"Peterborough", :status=>["On time", ""], :platform=>"", :departs=>"18:26"}
+  {:station=>"London Kings Cross", :status=>["On time", ""], :platform=>"", :departs=>"19:19"}
+
+  {:destination=>"London Kings Cross", :status=>["On time"], :platform=>"3", :due=>"17:55", :service_id=>"KbVdMlKOX0Y80aSv3f+Ztg=="}
+  {:station=>"Newcastle", :status=>["Departed", "On time"], :platform=>"", :departs=>"16:55"}
+  {:station=>"Durham", :status=>["On time", ""], :platform=>"", :departs=>"17:07"}
+  {:station=>"Darlington", :status=>["On time", ""], :platform=>"", :departs=>"17:25"}
+  {:station=>"York", :status=>["On time", ""], :platform=>"3", :departs=>"17:55"}
+  {:station=>"Doncaster", :status=>["On time", ""], :platform=>"", :departs=>"18:20"}
+  {:station=>"Retford", :status=>["On time", ""], :platform=>"", :departs=>"18:36"}
+  {:station=>"Newark North Gate", :status=>["On time", ""], :platform=>"", :departs=>"18:51"}
+  {:station=>"Peterborough", :status=>["On time", ""], :platform=>"", :departs=>"19:19"}
+  {:station=>"Stevenage", :status=>["On time", ""], :platform=>"", :departs=>"19:50"}
+  {:station=>"London Kings Cross", :status=>["On time", ""], :platform=>"", :departs=>"20:19"}
+
+  {:destination=>"London Kings Cross", :status=>["On time"], :platform=>"", :due=>"18:31", :service_id=>"mqyP34FV2xdcNRn#17pbTA=="}
+  {:station=>"Edinburgh", :status=>["Departed", "On time"], :platform=>"", :departs=>"16:00"}
+  {:station=>"Dunbar", :status=>["Departed", "2 mins late"], :platform=>"", :departs=>"16:20"}
+  {:station=>"Berwick-upon-Tweed", :status=>["Departed", "5 mins late"], :platform=>"", :departs=>"16:43"}
+  {:station=>"Newcastle", :status=>["On time", ""], :platform=>"", :departs=>"17:32"}
+  {:station=>"Darlington", :status=>["On time", ""], :platform=>"", :departs=>"17:59"}
+  {:station=>"York", :status=>["On time", ""], :platform=>"", :departs=>"18:31"}
+  {:station=>"Doncaster", :status=>["On time", ""], :platform=>"", :departs=>"18:53"}
+  {:station=>"Newark North Gate", :status=>["On time", ""], :platform=>"", :departs=>"19:17"}
+  {:station=>"Peterborough", :status=>["On time", ""], :platform=>"", :departs=>"19:46"}
+  {:station=>"Stevenage", :status=>["On time", ""], :platform=>"", :departs=>"20:16"}
+  {:station=>"London Kings Cross", :status=>["On time", ""], :platform=>"", :departs=>"20:44"}
 </pre>
 
 h2. Station List
