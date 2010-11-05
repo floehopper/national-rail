@@ -219,6 +219,89 @@ h3. Arrivals
   {:station=>"London Kings Cross", :status=>["On time", ""], :platform=>"", :departs=>"20:44"}
 </pre>
 
+h2. Virgin Trains Live Departure Boards
+
+<pre>
+  require "national-rail"
+
+  boards = NationalRail::VirginLiveDepartureBoards.new
+  boards.summary("DHM").each do |row|
+    puts
+    puts "Summary :-"
+    p row.attributes
+    puts "Will call at :-"
+    row.details[:will_call_at].each { |stop| p stop }
+    puts "Previous calling points :-"
+    row.details[:previous_calling_points].each { |stop| p stop }
+  end
+</pre>
+
+<pre>
+
+  Summary :-
+  {:platform=>"", :expected_arrival=>"1041", :to=>"Newcastle", :timetabled_departure=>"1035", :expected_departure=>"1041", :from=>"Birmingham New Street", :timetabled_arrival=>"1034", :details_url=>"http://realtime.nationalrail.co.uk/virgintrains/train.aspx?T=DRHM++++&J=157410&R=0"}
+  Will call at :-
+  {:expected_arrival=>"On time", :station=>"Newcastle", :timetabled_arrival=>"1052"}
+  Previous calling points :-
+  {:timetabled_departure=>"0730", :expected_departure=>"", :station=>"Birmingham New Street", :actual_departure=>"0732"}
+  {:timetabled_departure=>"0811", :expected_departure=>"", :station=>"Derby", :actual_departure=>"On time"}
+  {:timetabled_departure=>"0832", :expected_departure=>"", :station=>"Chesterfield", :actual_departure=>"On time"}
+  {:timetabled_departure=>"0854", :expected_departure=>"", :station=>"Sheffield", :actual_departure=>"On time"}
+  {:timetabled_departure=>"0922", :expected_departure=>"", :station=>"Doncaster", :actual_departure=>"0924"}
+  {:timetabled_departure=>"0951", :expected_departure=>"", :station=>"York", :actual_departure=>"0957"}
+  {:timetabled_departure=>"1019", :expected_departure=>"", :station=>"Darlington", :actual_departure=>"1026"}
+
+...
+
+  Summary :-
+  {:platform=>"2", :expected_arrival=>"1046", :to=>"Edinburgh", :timetabled_departure=>"1040", :expected_departure=>"1046", :from=>"London Kings Cross", :timetabled_arrival=>"1040", :details_url=>"http://realtime.nationalrail.co.uk/virgintrains/train.aspx?T=DRHM++++&J=155938&R=0"}
+  Will call at :-
+  {:expected_arrival=>"1100", :station=>"Newcastle", :timetabled_arrival=>"1057"}
+  {:expected_arrival=>"On time", :station=>"Berwick-upon-Tweed", :timetabled_arrival=>"1142"}
+  {:expected_arrival=>"On time", :station=>"Edinburgh", :timetabled_arrival=>"1231"}
+  Previous calling points :-
+  {:timetabled_departure=>"0800", :expected_departure=>"", :station=>"London Kings Cross", :actual_departure=>"On time"}
+  {:timetabled_departure=>"0846", :expected_departure=>"", :station=>"Peterborough", :actual_departure=>"0852"}
+  {:timetabled_departure=>"0955", :expected_departure=>"", :station=>"York", :actual_departure=>"1001"}
+  {:timetabled_departure=>"1023", :expected_departure=>"", :station=>"Darlington", :actual_departure=>"1030"}
+
+...
+
+  Summary :-
+  {:platform=>"2", :expected_arrival=>"1055", :to=>"Newcastle", :timetabled_departure=>"1051", :expected_departure=>"1055", :from=>"Manchester Airport", :timetabled_arrival=>"1050", :details_url=>"http://realtime.nationalrail.co.uk/virgintrains/train.aspx?T=DRHM++++&J=144193&R=0"}
+  Will call at :-
+  {:expected_arrival=>"1100", :station=>"Chester-le-Street", :timetabled_arrival=>"1056"}
+  {:expected_arrival=>"1110", :station=>"Newcastle", :timetabled_arrival=>"1108"}
+  Previous calling points :-
+  {:timetabled_departure=>"0805", :expected_departure=>"", :station=>"Manchester Airport", :actual_departure=>"On time"}
+  {:timetabled_departure=>"0826", :expected_departure=>"", :station=>"Manchester Piccadilly", :actual_departure=>"On time"}
+  {:timetabled_departure=>"0857", :expected_departure=>"", :station=>"Huddersfield", :actual_departure=>"On time"}
+  {:timetabled_departure=>"0907", :expected_departure=>"", :station=>"Dewsbury", :actual_departure=>"On time"}
+  {:timetabled_departure=>"0927", :expected_departure=>"", :station=>"Leeds", :actual_departure=>"On time"}
+  {:timetabled_departure=>"1000", :expected_departure=>"", :station=>"York", :actual_departure=>"1003"}
+  {:timetabled_departure=>"1021", :expected_departure=>"", :station=>"Northallerton", :actual_departure=>"1026"}
+  {:timetabled_departure=>"1033", :expected_departure=>"", :station=>"Darlington", :actual_departure=>"1038"}
+
+...
+
+  Summary :-
+  {:platform=>"", :expected_arrival=>"No report", :to=>"Reading", :timetabled_departure=>"1235", :expected_departure=>"No report", :from=>"Newcastle", :timetabled_arrival=>"1234", :details_url=>"http://realtime.nationalrail.co.uk/virgintrains/train.aspx?T=DRHM++++&J=142167&R=0"}
+  Will call at :-
+  {:expected_arrival=>"No report", :station=>"Darlington", :timetabled_arrival=>"1251"}
+  {:expected_arrival=>"No report", :station=>"York", :timetabled_arrival=>"1324"}
+  {:expected_arrival=>"No report", :station=>"Doncaster", :timetabled_arrival=>"1353"}
+  {:expected_arrival=>"No report", :station=>"Sheffield", :timetabled_arrival=>"1420"}
+  {:expected_arrival=>"No report", :station=>"Derby", :timetabled_arrival=>"1451"}
+  {:expected_arrival=>"On time", :station=>"Birmingham New Street", :timetabled_arrival=>"1527"}
+  {:expected_arrival=>"On time", :station=>"Leamington Spa", :timetabled_arrival=>"1558"}
+  {:expected_arrival=>"On time", :station=>"Banbury", :timetabled_arrival=>"1617"}
+  {:expected_arrival=>"On time", :station=>"Oxford", :timetabled_arrival=>"1640"}
+  {:expected_arrival=>"On time", :station=>"Reading", :timetabled_arrival=>"1708"}
+  Previous calling points :-
+  {:timetabled_departure=>"1219", :expected_departure=>"No report", :station=>"Newcastle", :actual_departure=>""}
+  {:timetabled_departure=>"1228", :expected_departure=>"No report", :station=>"Chester-le-Street", :actual_departure=>""}
+</pre>
+
 h2. Station List
 
 <pre>
