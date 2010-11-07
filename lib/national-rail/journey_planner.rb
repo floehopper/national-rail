@@ -52,7 +52,9 @@ module NationalRail
       def parse_details(page, date)
         details = {}
         description = (page.doc/"table#journeyLegDetails tbody tr.lastRow td[@colspan=6] div").last.inner_text.gsub(/\s+/, " ").strip
-        origins, destinations = (/from (.*) to (.*)/.match(description)[1,2]).map{ |s| s.split(",").map(&:strip) }
+        company = (/(.*) service from .* to .*/.match(description)[1]).strip
+        details[:company] = company
+        origins, destinations = (/.* service from (.*) to (.*)/.match(description)[1,2]).map{ |s| s.split(",").map(&:strip) }
         details[:origins], details[:destinations] = origins, destinations
         parser = TimeParser.new(date)
 
