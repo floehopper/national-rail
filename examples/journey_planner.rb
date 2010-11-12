@@ -7,7 +7,7 @@ planner = NationalRail::JourneyPlanner.new
 summary_rows = planner.plan(
   :from => "Peterborough",
   :to => "London Kings Cross",
-  :time => Time.zone.parse("2010-11-08 03:00")
+  :time => Time.zone.parse(Date.tomorrow.to_s)
 )
 summary_rows.each do |row|
   puts "\nTrain departing at: #{row.departure_time} with #{row.number_of_changes} changes..."
