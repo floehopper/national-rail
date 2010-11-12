@@ -131,8 +131,8 @@ module NationalRail
           form["_includeOvertakenTrains"] = "on"
         end.click_button(button)
 
-        if (times_page.doc/"error-message").any?
-          raise (times_page.doc/"error-message").first.inner_text.gsub(/\s+/, " ").strip
+        if (times_page.doc/".error-message").any?
+          raise (times_page.doc/".error-message").first.inner_text.gsub(/\s+/, " ").strip
         end
 
         date = Date.parse((times_page.doc/".journey-details span:nth-child(0)").first.inner_text.gsub(/\s+/, " ").gsub(/\+ 1 day/, '').strip)
