@@ -15,7 +15,7 @@ spec = Gem::Specification.new do |s|
 
   # Change these as appropriate
   s.name              = "national-rail"
-  s.version           = "0.3.2"
+  s.version           = "0.3.3"
   s.summary           = "A Ruby API for the National Rail website"
   s.author            = "James Mead"
   s.email             = "james@floehopper.org"
@@ -36,6 +36,7 @@ spec = Gem::Specification.new do |s|
   s.add_dependency("mechanize", "~> 1.0.0")
   s.add_dependency("hpricot", "~> 0.8.2")
   s.add_dependency("activesupport", "~> 3.0.0")
+  s.add_dependency("tidy_ffi", "~> 0.1.3")
 
   # If your tests use any gems, include them here
   # s.add_development_dependency("mocha") # for example

@@ -1,6 +1,7 @@
 require 'mechanize'
 require 'hpricot'
 require 'active_support'
+require 'tidy_ffi'
 
 module NationalRail
 
@@ -9,7 +10,7 @@ module NationalRail
     class HpricotParser < Mechanize::Page
       attr_reader :doc
       def initialize(uri = nil, response = nil, body = nil, code = nil)
-        @doc = Hpricot(body)
+        @doc = Hpricot(TidyFFI::Tidy.new(body).clean)
         super(uri, response, body, code)
       end
     end
