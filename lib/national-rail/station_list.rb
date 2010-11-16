@@ -23,7 +23,7 @@ module NationalRail
     def each
       @agent.get("http://www.nationalrail.co.uk/stations/codes/") do |stations_page|
         (stations_page.doc/"table:nth-child(0) tbody tr").each do |tr|
-          name, code = (tr/"td").map { |td| td.inner_text }
+          name, code = (tr/"td").map { |td| td.inner_text.gsub(%r{\n}, " ") }
           coordinates = @coordinates_vs_code[code]
           latitude = coordinates ? coordinates[:latitude] : nil
           longitude = coordinates ? coordinates[:longitude] : nil
