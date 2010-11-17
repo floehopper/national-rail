@@ -140,7 +140,7 @@ module NationalRail
 
         (times_page.doc/"table#outboundJourneyTable > tbody > tr").reject { |tr| %w(status changes).include?(tr.attributes["class"].value) }.each do |tr|
 
-          if (tr.attributes["class"] == "day-heading")
+          if (tr.attributes["class"].value == "day-heading")
             date = Date.parse((tr/"th > p > span").first.inner_text.strip)
             next
           end
@@ -151,7 +151,7 @@ module NationalRail
           anchor = (tr/"a[@id^=journeyOption]").first
           next unless anchor
 
-          link = times_page.links.detect { |l| l.attributes["id"] == anchor["id"] }
+          link = times_page.links.detect { |l| l.attributes["id"] == anchor.attributes["id"].value }
 
           summary_rows << SummaryRow.new(@agent, date, departure_time, number_of_changes, link)
         end
