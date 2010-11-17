@@ -15,7 +15,7 @@ spec = Gem::Specification.new do |s|
 
   # Change these as appropriate
   s.name              = "national-rail"
-  s.version           = "0.3.6"
+  s.version           = "0.3.7"
   s.summary           = "A Ruby API for the National Rail website"
   s.author            = "James Mead"
   s.email             = "james@floehopper.org"

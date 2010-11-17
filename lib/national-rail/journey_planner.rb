@@ -147,7 +147,10 @@ module NationalRail
 
           departure_time = TimeParser.new(date).time((tr/"td.leaving").inner_text.strip)
           number_of_changes = (tr/"td:nth-child(6)").inner_text.strip
+
           anchor = (tr/"a[@id^=journeyOption]").first
+          next unless anchor
+
           link = times_page.links.detect { |l| l.attributes["id"] == anchor["id"] }
 
           summary_rows << SummaryRow.new(@agent, date, departure_time, number_of_changes, link)
