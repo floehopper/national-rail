@@ -136,7 +136,7 @@ module NationalRail
           raise (times_page.doc/".error-message").first.inner_text.gsub(/\s+/, " ").strip
         end
 
-        date = Date.parse((times_page.doc/".journey-details span td").first.children.first.inner_text.gsub(/\s+/, " ").gsub(/\+ 1 day/, '').strip)
+        date = Date.parse((times_page.doc/".journey-details span").first.children.first.inner_text.gsub(/\s+/, " ").gsub(/\+ 1 day/, '').strip)
 
         (times_page.doc/"table#outboundJourneyTable > tbody > tr").reject { |tr| %w(status changes).include?(tr.attributes["class"].value) }.each do |tr|
 
