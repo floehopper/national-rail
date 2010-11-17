@@ -1,5 +1,5 @@
 require 'mechanize'
-require 'hpricot'
+require 'nokogiri'
 require 'active_support'
 require 'tidy_ffi'
 
@@ -7,10 +7,10 @@ module NationalRail
 
   class JourneyPlanner
 
-    class HpricotParser < Mechanize::Page
+    class NokogiriParser < Mechanize::Page
       attr_reader :doc
       def initialize(uri = nil, response = nil, body = nil, code = nil)
-        @doc = Hpricot(TidyFFI::Tidy.new(body).clean)
+        @doc = Nokogiri(TidyFFI::Tidy.new(body).clean)
         super(uri, response, body, code)
       end
     end
@@ -52,7 +52,7 @@ module NationalRail
 
       def parse_details(page, date)
         details = {}
-        description = (page.doc/"table#journeyLegDetails tbody tr.lastRow td[@colspan=6] div").last.inner_text.gsub(/\s+/, " ").strip
+        description = (page.doc/"table#journeyLegDetails tbody tr.lastRow td[@colspan='6'] div").last.inner_text.gsub(/\s+/, " ").strip
         company = (/(.*) service from .* to .*/.match(description)[1]).strip
         details[:company] = company
         origins, destinations = (/.* service from (.*) to (.*)/.match(description)[1,2]).map{ |s| s.split(",").map(&:strip) }
@@ -99,7 +99,7 @@ module NationalRail
     def initialize
       Time.zone ||= 'London'
       @agent = Mechanize.new
-      @agent.pluggable_parser.html = HpricotParser
+      @agent.pluggable_parser.html = NokogiriParser
       @agent.user_agent_alias = "Mac FireFox"
     end
 
@@ -136,9 +136,9 @@ module NationalRail
           raise (times_page.doc/".error-message").first.inner_text.gsub(/\s+/, " ").strip
         end
 
-        date = Date.parse((times_page.doc/".journey-details span:nth-child(0)").first.inner_text.gsub(/\s+/, " ").gsub(/\+ 1 day/, '').strip)
+        date = Date.parse((times_page.doc/".journey-details span td").first.children.first.inner_text.gsub(/\s+/, " ").gsub(/\+ 1 day/, '').strip)
 
-        (times_page.doc/"table#outboundJourneyTable > tbody > tr:not(.status):not(.changes)").each do |tr|
+        (times_page.doc/"table#outboundJourneyTable > tbody > tr").reject { |tr| %w(status changes).include?(tr.attributes["class"].value) }.each do |tr|
 
           if (tr.attributes["class"] == "day-heading")
             date = Date.parse((tr/"th > p > span").first.inner_text.strip)
@@ -156,7 +156,7 @@ module NationalRail
       summary_rows
     rescue => e
       filename = File.join(File.dirname(__FILE__), "..", "..", "summary-error.html")
-      File.open(filename, "w") { |f| f.write(@agent.current_page.parser.to_html) }
+      File.open(filename, "w") { |f| f.write(TidyFFI::Tidy.new(@agent.current_page.parser.to_html).clean) }
       raise e
     end
   end

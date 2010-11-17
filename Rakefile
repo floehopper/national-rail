@@ -15,7 +15,7 @@ spec = Gem::Specification.new do |s|
 
   # Change these as appropriate
   s.name              = "national-rail"
-  s.version           = "0.3.4"
+  s.version           = "0.3.5"
   s.summary           = "A Ruby API for the National Rail website"
   s.author            = "James Mead"
   s.email             = "james@floehopper.org"
@@ -35,6 +35,7 @@ spec = Gem::Specification.new do |s|
   # relevant versions
   s.add_dependency("mechanize", "~> 1.0.0")
   s.add_dependency("hpricot", "~> 0.8.2")
+  s.add_dependency("nokogiri", "~> 1.4.4")
   s.add_dependency("activesupport", "~> 3.0.0")
   s.add_dependency("tidy_ffi", "~> 0.1.3")
 
