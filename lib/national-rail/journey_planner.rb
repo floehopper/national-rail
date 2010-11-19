@@ -7,6 +7,19 @@ module NationalRail
 
   class JourneyPlanner
 
+    class << self
+      attr_accessor :capture_path
+      def capture(page, filename)
+        unless capture_path.blank?
+          FileUtils.mkdir_p(capture_path)
+          path = File.join(capture_path, filename)
+          File.open(path, "w") { |f| f.write(TidyFFI::Tidy.new(page.parser.to_html).clean) }
+        end
+      rescue => e
+        puts e
+      end
+    end
+
     class NokogiriParser < Mechanize::Page
       attr_reader :doc
       def initialize(uri = nil, response = nil, body = nil, code = nil)
@@ -46,7 +59,9 @@ module NationalRail
       def details
         return if number_of_changes.to_i > 0
         @agent.transact do
-          parse_details(@link.click, @date)
+          details_page = @link.click
+          JourneyPlanner.capture(details_page, "details.html")
+          parse_details(details_page, @date)
         end
       end
 
@@ -90,8 +105,7 @@ module NationalRail
         }
         details
       rescue => e
-        filename = File.join(File.dirname(__FILE__), "..", "..", "details-error.html")
-        File.open(filename, "w") { |f| f.write(page.parser.to_html) }
+        JourneyPlanner.capture(page, "details-error.html")
         raise e
       end
     end
@@ -106,6 +120,7 @@ module NationalRail
     def plan(options = {})
       summary_rows = []
       @agent.get("http://www.nationalrail.co.uk/") do |home_page|
+        JourneyPlanner.capture(home_page, "index.html")
         button = nil
         times_page = home_page.form_with(:action => "http://ojp.nationalrail.co.uk/en/s/planjourney/plan") do |form|
           button = form.buttons.last
@@ -131,6 +146,8 @@ module NationalRail
           form["_directTrains"] = "on"
           form["_includeOvertakenTrains"] = "on"
         end.click_button(button)
+
+        JourneyPlanner.capture(times_page, "summary.html")
 
         if (times_page.doc/".error-message").any?
           raise (times_page.doc/".error-message").first.inner_text.gsub(/\s+/, " ").strip
@@ -158,8 +175,7 @@ module NationalRail
       end
       summary_rows
     rescue => e
-      filename = File.join(File.dirname(__FILE__), "..", "..", "summary-error.html")
-      File.open(filename, "w") { |f| f.write(TidyFFI::Tidy.new(@agent.current_page.parser.to_html).clean) }
+      JourneyPlanner.capture(@agent.current_page, "summary-error.html")
       raise e
     end
   end
