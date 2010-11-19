@@ -1,6 +1,6 @@
 require "rubygems"
+require "bundler/setup"
 require "national-rail"
-require "active_support"
 
 Time.zone = "London"
 planner = NationalRail::JourneyPlanner.new

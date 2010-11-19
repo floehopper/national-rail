@@ -1,4 +1,5 @@
 require "rubygems"
+require "bundler/setup"
 require "national-rail"
 
 boards = NationalRail::VirginLiveDepartureBoards.new
