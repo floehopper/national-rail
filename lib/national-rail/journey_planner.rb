@@ -10,6 +10,7 @@ module NationalRail
     def initialize(original_exception, page_html)
       super(original_exception.message)
       @original_exception, @page_html = original_exception, page_html
+      set_backtrace(@original_exception.backtrace)
     end
     def inspect
       "#{self.class} wrapping #{@original_exception.inspect}"
