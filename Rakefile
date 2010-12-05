@@ -15,7 +15,7 @@ spec = Gem::Specification.new do |s|
 
   # Change these as appropriate
   s.name              = "national-rail"
-  s.version           = "0.3.10"
+  s.version           = "0.3.11"
   s.summary           = "A Ruby API for the National Rail website"
   s.author            = "James Mead"
   s.email             = "james@floehopper.org"
@@ -28,7 +28,7 @@ spec = Gem::Specification.new do |s|
   # s.rdoc_options      = %w(--main README)
 
   # Add any extra files to include in the gem (like your README)
-  s.files             = %w() + Dir.glob("{lib/**/*}")
+  s.files             = %w() + Dir.glob("{lib/**/*}").sort
   s.require_paths     = ["lib"]
 
   # If you want to depend on other gems, add them here, along with any
