@@ -25,11 +25,11 @@ class JourneyPlannerTest < Test::Unit::TestCase
 
     assert_equal time("08:10"), rows[0].departure_time
     assert_equal "3", rows[0].number_of_changes
-    assert_nil rows[0].details
+    assert_equal({}, rows[0].details)
 
     assert_equal time("11:00"), rows[1].departure_time
     assert_equal "2", rows[1].number_of_changes
-    assert_nil rows[1].details
+    assert_equal({}, rows[1].details)
 
     assert_equal time("12:00"), rows[2].departure_time
     assert_equal "0", rows[2].number_of_changes
@@ -53,11 +53,27 @@ class JourneyPlannerTest < Test::Unit::TestCase
 
     assert_equal time("12:10"), rows[3].departure_time
     assert_equal "3", rows[3].number_of_changes
-    assert_nil rows[3].details
+    assert_equal({}, rows[3].details)
 
     assert_equal time("15:00"), rows[4].departure_time
     assert_equal "1", rows[4].number_of_changes
-    assert_nil rows[4].details
+    assert_equal({}, rows[4].details)
+  end
+  
+  def test_do_not_attempt_to_parse_details_for_cancelled_trains
+    stub_request(:get, "www.nationalrail.co.uk/").to_return(html_body("index.html"))
+    stub_request(:post, "ojp.nationalrail.co.uk/en/s/planjourney/plan").to_return(html_body("summary-cancelled-trains.html"))
+    stub_request(:get, "ojp.nationalrail.co.uk/en/s/timetable/details").with(details_query(2)).to_return(html_body("details-cancelled-train.html"))
+    rows = @planner.plan(
+      :from => "Doncaster",
+      :to => "Glasgow Central",
+      :time => time("14:00")
+    )
+    rows.each_with_index do |row, index|
+      assert_equal "cancelled", rows[index].status, "row: #{index}"
+      assert_equal({}, rows[index].details, "row: #{index}")
+    end
+    assert_not_requested(:get, "ojp.nationalrail.co.uk/en/s/timetable/details", details_query(2))
   end
 
   private

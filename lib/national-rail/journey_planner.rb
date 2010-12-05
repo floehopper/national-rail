@@ -49,15 +49,17 @@ module NationalRail
 
     class SummaryRow
 
-      attr_reader :departure_time, :number_of_changes
+      attr_reader :departure_time, :number_of_changes, :status
 
-      def initialize(agent, date, departure_time, number_of_changes, link)
+      def initialize(agent, date, departure_time, number_of_changes, link, status)
         @agent, @date = agent, date
         @departure_time, @number_of_changes, @link = departure_time, number_of_changes, link
+        @status = status
       end
 
       def details
-        return if number_of_changes.to_i > 0
+        return {} if number_of_changes.to_i > 0
+        return {} if status =~ /cancelled/i
         @agent.transact do
           details_page = @link.click
           JourneyPlanner.capture(details_page, "details.html")
@@ -68,8 +70,9 @@ module NationalRail
       def parse_details(page, date)
         details = {}
         description = (page.doc/"table#journeyLegDetails tbody tr.lastRow td[@colspan='6'] div").last.inner_text.gsub(/\s+/, " ").strip
-        company = (/(.*) service from .* to .*/.match(description)[1]).strip
-        details[:company] = company
+        company_matches = /(.*) service from .* to .*/.match(description)
+        return details unless company_matches
+        details[:company] = company_matches[1].strip
         origins, destinations = (/.* service from (.*) to (.*)/.match(description)[1,2]).map{ |s| s.split(",").map(&:strip) }
         details[:origins], details[:destinations] = origins, destinations
         parser = TimeParser.new(date)
@@ -162,15 +165,16 @@ module NationalRail
             next
           end
 
-          departure_time = TimeParser.new(date).time((tr/"td.leaving").inner_text.strip)
+          departure_time = TimeParser.new(date).time((tr/"td:nth-child(1)").inner_text.strip)
           number_of_changes = (tr/"td:nth-child(6)").inner_text.strip
+          status = (tr/"td:nth-child(10) .status").inner_text.strip
 
           anchor = (tr/"a[@id^=journeyOption]").first
           next unless anchor
 
           link = times_page.links.detect { |l| l.attributes["id"] == anchor.attributes["id"].value }
 
-          summary_rows << SummaryRow.new(@agent, date, departure_time, number_of_changes, link)
+          summary_rows << SummaryRow.new(@agent, date, departure_time, number_of_changes, link, status)
         end
       end
       summary_rows
