@@ -70,7 +70,7 @@ class JourneyPlannerTest < Test::Unit::TestCase
       :time => time("14:00")
     )
     rows.each_with_index do |row, index|
-      assert_equal "cancelled", rows[index].status, "row: #{index}"
+      assert rows[index].cancelled?, "row: #{index}"
       assert_equal({}, rows[index].details, "row: #{index}")
     end
     assert_not_requested(:get, "ojp.nationalrail.co.uk/en/s/timetable/details", details_query(2))

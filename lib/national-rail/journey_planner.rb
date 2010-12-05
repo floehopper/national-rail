@@ -49,7 +49,7 @@ module NationalRail
 
     class SummaryRow
 
-      attr_reader :departure_time, :number_of_changes, :status
+      attr_reader :departure_time, :number_of_changes
 
       def initialize(agent, date, departure_time, number_of_changes, link, status)
         @agent, @date = agent, date
@@ -57,9 +57,13 @@ module NationalRail
         @status = status
       end
 
+      def cancelled?
+        @status =~ %r{cancelled}i
+      end
+
       def details
         return {} if number_of_changes.to_i > 0
-        return {} if status =~ /cancelled/i
+        return {} if cancelled?
         @agent.transact do
           details_page = @link.click
           JourneyPlanner.capture(details_page, "details.html")
