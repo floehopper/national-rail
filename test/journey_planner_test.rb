@@ -13,7 +13,7 @@ class JourneyPlannerTest < Test::Unit::TestCase
     @planner = NationalRail::JourneyPlanner.new
   end
 
-  def test_plan
+  def test_sample
     stub_request(:get, "www.nationalrail.co.uk/").to_return(html_body("fixtures/index.html"))
     stub_request(:post, "ojp.nationalrail.co.uk/en/s/planjourney/plan").to_return(html_body("fixtures/sample/summary.html"))
     (1..5).each do |index|
@@ -61,8 +61,8 @@ class JourneyPlannerTest < Test::Unit::TestCase
     assert_equal "1", rows[4].number_of_changes
     assert_equal({}, rows[4].details)
   end
-  
-  def test_do_not_attempt_to_parse_details_for_cancelled_trains
+
+  def test_cancelled
     stub_request(:get, "www.nationalrail.co.uk/").to_return(html_body("fixtures/index.html"))
     stub_request(:post, "ojp.nationalrail.co.uk/en/s/planjourney/plan").to_return(html_body("fixtures/cancelled/summary.html"))
     (1..5).each do |index|
