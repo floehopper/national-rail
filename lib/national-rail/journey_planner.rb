@@ -5,12 +5,25 @@ require 'tidy_ffi'
 
 module NationalRail
 
+  class ParseError < StandardError
+    attr_reader :original_exception, :page_html
+    def initialize(original_exception, page_html)
+      super(original_exception.message)
+      @original_exception, @page_html = original_exception, page_html
+    end
+    def inspect
+      "#{self.class} wrapping #{@original_exception.inspect}"
+    end
+  end
+
+  class InputError < StandardError; end
+
   class JourneyPlanner
 
     class << self
       attr_accessor :capture_path
       def capture(page, filename)
-        unless capture_path.blank?
+        if capture_path.present?
           FileUtils.mkdir_p(capture_path)
           path = File.join(capture_path, filename)
           File.open(path, "w") { |f| f.write(TidyFFI::Tidy.new(page.parser.to_html).clean) }
@@ -113,7 +126,8 @@ module NationalRail
         details
       rescue => e
         JourneyPlanner.capture(page, "details-error.html")
-        raise e
+        page_html = TidyFFI::Tidy.new(page.parser.to_html).clean
+        raise ParseError.new(e, page_html)
       end
     end
 
@@ -157,7 +171,7 @@ module NationalRail
         JourneyPlanner.capture(times_page, "summary.html")
 
         if (times_page.doc/".error-message").any?
-          raise (times_page.doc/".error-message").first.inner_text.gsub(/\s+/, " ").strip
+          raise InputError.new((times_page.doc/".error-message").first.inner_text.gsub(/\s+/, " ").strip)
         end
 
         date = Date.parse((times_page.doc/".journey-details span").first.children.first.inner_text.gsub(/\s+/, " ").gsub(/\+ 1 day/, '').strip)
@@ -183,8 +197,10 @@ module NationalRail
       end
       summary_rows
     rescue => e
-      JourneyPlanner.capture(@agent.current_page, "summary-error.html")
-      raise e
+      page = @agent.current_page
+      JourneyPlanner.capture(page, "summary-error.html")
+      page_html = TidyFFI::Tidy.new(page.parser.to_html).clean
+      raise ParseError.new(e, page_html)
     end
   end
 end
