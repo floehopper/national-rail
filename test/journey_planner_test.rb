@@ -14,9 +14,11 @@ class JourneyPlannerTest < Test::Unit::TestCase
   end
 
   def test_plan
-    stub_request(:get, "www.nationalrail.co.uk/").to_return(html_body("index.html"))
-    stub_request(:post, "ojp.nationalrail.co.uk/en/s/planjourney/plan").to_return(html_body("summary.html"))
-    stub_request(:get, "ojp.nationalrail.co.uk/en/s/timetable/details").with(details_query(3)).to_return(html_body("details.html"))
+    stub_request(:get, "www.nationalrail.co.uk/").to_return(html_body("fixtures/index.html"))
+    stub_request(:post, "ojp.nationalrail.co.uk/en/s/planjourney/plan").to_return(html_body("fixtures/sample/summary.html"))
+    (1..5).each do |index|
+      stub_request(:get, "ojp.nationalrail.co.uk/en/s/timetable/details").with(details_query(index)).to_return(html_body("fixtures/sample/details-#{index}.html"))
+    end
     rows = @planner.plan(
       :from => "London Kings Cross",
       :to => "Inverness",
@@ -61,9 +63,11 @@ class JourneyPlannerTest < Test::Unit::TestCase
   end
   
   def test_do_not_attempt_to_parse_details_for_cancelled_trains
-    stub_request(:get, "www.nationalrail.co.uk/").to_return(html_body("index.html"))
-    stub_request(:post, "ojp.nationalrail.co.uk/en/s/planjourney/plan").to_return(html_body("summary-cancelled-trains.html"))
-    stub_request(:get, "ojp.nationalrail.co.uk/en/s/timetable/details").with(details_query(2)).to_return(html_body("details-cancelled-train.html"))
+    stub_request(:get, "www.nationalrail.co.uk/").to_return(html_body("fixtures/index.html"))
+    stub_request(:post, "ojp.nationalrail.co.uk/en/s/planjourney/plan").to_return(html_body("fixtures/cancelled/summary.html"))
+    (1..5).each do |index|
+      stub_request(:get, "ojp.nationalrail.co.uk/en/s/timetable/details").with(details_query(index)).to_return(html_body("fixtures/cancelled/details-#{index}.html"))
+    end
     rows = @planner.plan(
       :from => "Doncaster",
       :to => "Glasgow Central",
@@ -79,7 +83,7 @@ class JourneyPlannerTest < Test::Unit::TestCase
   private
 
   def time(hhmm)
-    Time.zone.parse("2010-11-22 #{hhmm}")
+    Time.zone.parse("2010-12-15 #{hhmm}")
   end
 
   def html_body(filename)
