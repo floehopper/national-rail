@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.authors = ["James Mead"]
   s.date = %q{2010-12-05}
   s.email = %q{james@floehopper.org}
-  s.files = ["lib/national-rail", "lib/national-rail.rb", "lib/national-rail/index.html", "lib/national-rail/journey_planner.rb", "lib/national-rail/live_departure_boards.rb", "lib/national-rail/station_list.rb", "lib/national-rail/stations.kml", "lib/national-rail/virgin_live_departure_boards.rb"]
+  s.files = ["lib/national-rail.rb", "lib/national-rail/index.html", "lib/national-rail/journey_planner.rb", "lib/national-rail/live_departure_boards.rb", "lib/national-rail/station_list.rb", "lib/national-rail/stations.kml", "lib/national-rail/virgin_live_departure_boards.rb"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{national-rail}
   s.rubygems_version = %q{1.3.7}
