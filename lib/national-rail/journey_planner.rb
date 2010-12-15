@@ -3,6 +3,8 @@ require 'nokogiri'
 require 'active_support'
 require 'tidy_ffi'
 
+require 'national-rail/journey_planner/details_page_parser'
+
 module NationalRail
 
   class ParseError < StandardError
@@ -81,55 +83,17 @@ module NationalRail
         @agent.transact do
           details_page = @link.click
           JourneyPlanner.capture(details_page, "details.html")
-          parse_details(details_page, @date)
-        end
-      end
-
-      def parse_details(page, date)
-        details = {}
-        description = (page.doc/"table#journeyLegDetails tbody tr.lastRow td[@colspan='6'] div").last.inner_text.gsub(/\s+/, " ").strip
-        company_matches = /(.*) service from .* to .*/.match(description)
-        return details unless company_matches
-        details[:company] = company_matches[1].strip
-        origins, destinations = (/.* service from (.*) to (.*)/.match(description)[1,2]).map{ |s| s.split(",").map(&:strip) }
-        details[:origins], details[:destinations] = origins, destinations
-        parser = TimeParser.new(date)
-
-        origin_code = (page.doc/"td.origin abbr").inner_html.strip
-        departs_at = (page.doc/"td.leaving").inner_html.strip
-        details[:initial_stop] = {
-          :station_code => origin_code,
-          :departs_at => parser.time(departs_at)
-        }
-
-        details[:stops] = []
-        (page.doc/".callingpoints table > tbody > tr").each do |tr|
-          if (tr/".calling-points").length > 0
-            station_code = (tr/".calling-points > a > abbr").inner_html.strip
-            arrives_at = (tr/".arrives").inner_html.strip
-            departs_at = (tr/".departs").inner_html.strip
-            departs_at = arrives_at if arrives_at.present? && departs_at.blank?
-            arrives_at = departs_at if arrives_at.blank? && departs_at.present?
-            details[:stops] << {
-              :station_code => station_code,
-              :arrives_at => parser.time(arrives_at),
-              :departs_at => parser.time(departs_at)
-            }
+          parser = DetailsPageParser.new(details_page.doc, @date)
+          begin
+            parser.parse
+          rescue => e
+            JourneyPlanner.capture(details_page, "details-error.html")
+            page_html = TidyFFI::Tidy.new(details_page.parser.to_html).clean
+            raise ParseError.new(e, page_html)
           end
         end
-
-        destination_code = (page.doc/"td.destination abbr").inner_html.strip
-        arrives_at = (page.doc/"td.arriving").inner_html.strip
-        details[:final_stop] = {
-          :station_code => destination_code,
-          :arrives_at => parser.time(arrives_at)
-        }
-        details
-      rescue => e
-        JourneyPlanner.capture(page, "details-error.html")
-        page_html = TidyFFI::Tidy.new(page.parser.to_html).clean
-        raise ParseError.new(e, page_html)
       end
+
     end
 
     def initialize
