@@ -8,7 +8,9 @@ module NationalRail
 
       def parse
         details = {}
-        description = (@doc/"table#journeyLegDetails tbody tr.lastRow td[@colspan='6'] div").last.inner_text.gsub(/\s+/, " ").strip
+        description_divs = (@doc/"table#journeyLegDetails tbody tr.lastRow td[@colspan='6'] div")
+        return details unless description_divs.any?
+        description = description_divs.last.inner_text.gsub(/\s+/, " ").strip
         company_matches = /(.*) service from .* to .*/.match(description)
         return details unless company_matches
         details[:company] = company_matches[1].strip

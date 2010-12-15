@@ -4,13 +4,12 @@ class DetailsPageParserTest < Test::Unit::TestCase
 
   def setup
     Time.zone = "London"
-    doc = Nokogiri(File.open(File.join(File.dirname(__FILE__), 'fixtures', 'sample', 'details-3.html')))
-    date = Date.parse('2010-12-15')
-    @parser = NationalRail::JourneyPlanner::DetailsPageParser.new(doc, date)
   end
 
   def test_sample
-    details = @parser.parse
+    doc = Nokogiri(File.open(File.join(File.dirname(__FILE__), 'fixtures', 'sample', 'details-3.html')))
+    date = Date.parse('2010-12-15')
+    details = NationalRail::JourneyPlanner::DetailsPageParser.new(doc, date).parse
 
     assert_equal ["London Kings Cross"], details[:origins]
     assert_equal Time.zone.parse("2010-12-15 12:00"), details[:initial_stop][:departs_at]
@@ -30,4 +29,21 @@ class DetailsPageParserTest < Test::Unit::TestCase
     assert_equal "INV", details[:final_stop][:station_code]
     assert_equal "East Coast", details[:company]
   end
+
+  def test_cancelled
+    doc = Nokogiri(File.open(File.join(File.dirname(__FILE__), 'fixtures', 'cancelled', 'details-1.html')))
+    date = Date.parse('2010-12-05')
+    details = NationalRail::JourneyPlanner::DetailsPageParser.new(doc, date).parse
+
+    assert_equal({}, details)
+  end
+
+  def test_bus
+    doc = Nokogiri(File.open(File.join(File.dirname(__FILE__), 'fixtures', 'bus', 'details.html')))
+    date = Date.parse('2010-12-13')
+    details = NationalRail::JourneyPlanner::DetailsPageParser.new(doc, date).parse
+
+    assert_equal({}, details)
+  end
+
 end
