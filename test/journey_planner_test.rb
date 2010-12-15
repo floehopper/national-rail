@@ -1,10 +1,4 @@
-require "rubygems"
-require "bundler"
-Bundler.setup(:default, :development)
-
-require "test/unit"
-require 'webmock/test_unit'
-require "national-rail"
+require File.join(File.dirname(__FILE__), 'test_helper')
 
 class JourneyPlannerTest < Test::Unit::TestCase
 
