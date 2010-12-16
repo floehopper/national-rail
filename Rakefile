@@ -1,9 +1,15 @@
 require "rubygems"
 require "rake/gempackagetask"
 require "rake/rdoctask"
+require "rake/testtask"
 
-task :default => :package do
-  puts "Don't forget to write some tests!"
+task :default => [:test, :package]
+
+desc "Run tests"
+Rake::TestTask.new do |t|
+  t.libs << 'test'
+  t.test_files = FileList['test/**/*_test.rb']
+  t.verbose = true
 end
 
 # This builds the actual gem. For details of what all these options
