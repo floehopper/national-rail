@@ -131,3 +131,25 @@ begin
 rescue LoadError
   puts "Rake SshDirPublisher is unavailable or your rubyforge environment is not configured."
 end
+
+desc 'Tag the repository in git with gem version number'
+task :tag => [:gemspec, :package] do
+  if `git diff --cached`.empty?
+    if `git tag`.split("\n").include?("v#{spec.version}")
+      puts "Version #{spec.version} has already been tagged"
+    else
+      `git add #{File.expand_path("../#{spec.name}.gemspec", __FILE__)}`
+      `git commit -m "Released version #{spec.version}"`
+      `git tag v#{spec.version}`
+      `git push --tags`
+      `git push`
+    end
+  else
+    raise "Unstaged changes still waiting to be committed"
+  end
+end
+
+desc "Tag and publish the gem to rubygems.org"
+task :publish => :tag do
+  `gem push pkg/#{spec.name}-#{spec.version}.gem`
+end
