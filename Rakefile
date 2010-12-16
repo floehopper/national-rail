@@ -23,9 +23,10 @@ spec = Gem::Specification.new do |s|
   s.name              = "national-rail"
   s.version           = "0.3.12"
   s.summary           = "A Ruby API for the National Rail website"
+  s.description       = "Includes journey planner, live departure boards (both National Rail & Virgin), and a station list with GPS co-ordinates."
   s.author            = "James Mead"
   s.email             = "james@floehopper.org"
-  # s.homepage          = ""
+  s.homepage          = "http://github.com/floehopper/national-rail"
 
   s.has_rdoc          = true
   # You should probably have a README of some kind. Change the filename

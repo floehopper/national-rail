@@ -7,8 +7,10 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["James Mead"]
   s.date = %q{2010-12-16}
+  s.description = %q{Includes journey planner, live departure boards (both National Rail & Virgin), and a station list with GPS co-ordinates.}
   s.email = %q{james@floehopper.org}
-  s.files = ["lib/national-rail", "lib/national-rail.rb", "lib/national-rail/index.html", "lib/national-rail/journey_planner", "lib/national-rail/journey_planner.rb", "lib/national-rail/journey_planner/details_page_parser.rb", "lib/national-rail/live_departure_boards.rb", "lib/national-rail/station_list.rb", "lib/national-rail/stations.kml", "lib/national-rail/virgin_live_departure_boards.rb"]
+  s.files = ["lib/national-rail.rb", "lib/national-rail/index.html", "lib/national-rail/journey_planner.rb", "lib/national-rail/journey_planner/details_page_parser.rb", "lib/national-rail/live_departure_boards.rb", "lib/national-rail/station_list.rb", "lib/national-rail/stations.kml", "lib/national-rail/virgin_live_departure_boards.rb"]
+  s.homepage = %q{http://github.com/floehopper/national-rail}
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{national-rail}
   s.rubygems_version = %q{1.3.7}
