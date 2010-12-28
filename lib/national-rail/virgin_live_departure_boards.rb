@@ -1,5 +1,6 @@
 require 'mechanize'
 require 'hpricot'
+require 'active_support'
 require 'tidy_ffi'
 
 module NationalRail
@@ -106,7 +107,7 @@ module NationalRail
             :from => (tds[0]/"a").inner_text.gsub(/\s+/, ' '),
             :timetabled_arrival => parse_time(cell_text(tds[1])),
             :expected_arrival => parse_time(cell_text(tds[2])),
-            :platform => cell_text(tds[3]),
+            :platform => parse_integer(cell_text(tds[3])),
             :to => (tds[4]/"a").inner_text.gsub(/\s+/, ' '),
             :timetabled_departure => parse_time(cell_text(tds[5])),
             :expected_departure => parse_time(cell_text(tds[6])),
@@ -121,6 +122,10 @@ module NationalRail
 
     def parse_time(hhmm)
       Time.zone.parse("#{@date} #{hhmm.scan(%r{\d{2}}).join(':')}")
+    end
+
+    def parse_integer(value)
+      Integer(value) rescue nil
     end
 
   end
