@@ -1,4 +1,4 @@
-require File.join(File.dirname(__FILE__), 'test_helper')
+require File.join(File.dirname(__FILE__), '..', 'test_helper')
 
 class DetailsPageParserTest < Test::Unit::TestCase
 
@@ -7,7 +7,7 @@ class DetailsPageParserTest < Test::Unit::TestCase
   end
 
   def test_sample
-    doc = Nokogiri(File.open(File.join(File.dirname(__FILE__), 'fixtures', 'journey_planner', 'sample', 'details-3.html')))
+    doc = Nokogiri(File.open(File.join(File.dirname(__FILE__), '..', 'fixtures', 'journey_planner', 'sample', 'details-3.html')))
     date = Date.parse('2010-12-15')
     details = NationalRail::JourneyPlanner::DetailsPageParser.new(doc, date).parse
 
@@ -31,7 +31,7 @@ class DetailsPageParserTest < Test::Unit::TestCase
   end
 
   def test_cancelled
-    doc = Nokogiri(File.open(File.join(File.dirname(__FILE__), 'fixtures', 'journey_planner', 'cancelled', 'details-1.html')))
+    doc = Nokogiri(File.open(File.join(File.dirname(__FILE__), '..', 'fixtures', 'journey_planner', 'cancelled', 'details-1.html')))
     date = Date.parse('2010-12-05')
     details = NationalRail::JourneyPlanner::DetailsPageParser.new(doc, date).parse
 
@@ -39,7 +39,7 @@ class DetailsPageParserTest < Test::Unit::TestCase
   end
 
   def test_bus
-    doc = Nokogiri(File.open(File.join(File.dirname(__FILE__), 'fixtures', 'journey_planner', 'bus', 'details.html')))
+    doc = Nokogiri(File.open(File.join(File.dirname(__FILE__), '..', 'fixtures', 'journey_planner', 'bus', 'details.html')))
     date = Date.parse('2010-12-13')
     details = NationalRail::JourneyPlanner::DetailsPageParser.new(doc, date).parse
 
