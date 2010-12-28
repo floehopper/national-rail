@@ -8,7 +8,7 @@ class DetailsPageParserTest < Test::Unit::TestCase
   end
 
   def test_sample_1
-    doc = Hpricot(File.open(File.join(File.dirname(__FILE__), '..', 'fixtures', 'virgin_live_departure_boards', '2010-12-28-1254.22', 'term.aspx?T=NWCSTLE+&J=1355492&R=0')))
+    doc = Nokogiri(File.open(File.join(File.dirname(__FILE__), '..', 'fixtures', 'virgin_live_departure_boards', '2010-12-28-1254.22', 'term.aspx?T=NWCSTLE+&J=1355492&R=0')))
     details = NationalRail::VirginLiveDepartureBoards::DetailsPageParser.new(doc, @time_parser).parse
 
     previous_stations = details[:previous_calling_points].map { |pcp| pcp[:station] }
@@ -34,7 +34,7 @@ class DetailsPageParserTest < Test::Unit::TestCase
   end
 
   def test_sample_2
-    doc = Hpricot(File.open(File.join(File.dirname(__FILE__), '..', 'fixtures', 'virgin_live_departure_boards', '2010-12-28-1254.22', 'train.aspx?T=NWCSTLE+&J=1370355&R=0')))
+    doc = Nokogiri(File.open(File.join(File.dirname(__FILE__), '..', 'fixtures', 'virgin_live_departure_boards', '2010-12-28-1254.22', 'train.aspx?T=NWCSTLE+&J=1370355&R=0')))
     details = NationalRail::VirginLiveDepartureBoards::DetailsPageParser.new(doc, @time_parser).parse
 
     previous_stations = details[:previous_calling_points].map { |pcp| pcp[:station] }
@@ -60,7 +60,7 @@ class DetailsPageParserTest < Test::Unit::TestCase
   end
 
   def test_sample_3
-    doc = Hpricot(File.open(File.join(File.dirname(__FILE__), '..', 'fixtures', 'virgin_live_departure_boards', '2010-12-28-1254.22', 'train.aspx?T=NWCSTLE+&J=1355419&R=0')))
+    doc = Nokogiri(File.open(File.join(File.dirname(__FILE__), '..', 'fixtures', 'virgin_live_departure_boards', '2010-12-28-1254.22', 'train.aspx?T=NWCSTLE+&J=1355419&R=0')))
     details = NationalRail::VirginLiveDepartureBoards::DetailsPageParser.new(doc, @time_parser).parse
     assert_equal 'On time', details[:will_call_at][0][:expected_arrival]
   end

@@ -15,7 +15,7 @@ module NationalRail
         @date = date
       end
       def parse(value)
-        value = value.gsub(%r{\*+$}, '')
+        value = value.gsub(%r{&#\d+;}, '').gsub(%r{\*+$}, '')
         return value if ['On time', 'Starts here', 'No report'].include?(value)
         parts = value.scan(%r{\d{2}})
         return nil unless parts.length == 2
@@ -67,10 +67,10 @@ module NationalRail
       end
     end
 
-    class HpricotParser < Mechanize::Page
+    class NokogiriParser < Mechanize::Page
       attr_reader :doc
       def initialize(uri = nil, response = nil, body = nil, code = nil)
-        @doc = Hpricot(TidyFFI::Tidy.new(body).clean)
+        @doc = Nokogiri(TidyFFI::Tidy.new(body).clean)
         super(uri, response, body, code)
       end
     end
@@ -79,7 +79,7 @@ module NationalRail
 
     def initialize
       @agent = Mechanize.new
-      @agent.pluggable_parser.html = HpricotParser
+      @agent.pluggable_parser.html = NokogiriParser
       @agent.user_agent_alias = "Mac FireFox"
     end
 
