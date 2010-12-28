@@ -35,6 +35,10 @@ module NationalRail
         @agent, @details_link, @attributes = agent, details_link, attributes
       end
 
+      def [](key)
+        @attributes[key]
+      end
+
       def details
         @agent.transact do
           page = @details_link.click
