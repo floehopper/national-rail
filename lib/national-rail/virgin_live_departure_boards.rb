@@ -10,6 +10,18 @@ module NationalRail
         td.inner_html.gsub("&nbsp;", "")
       end
     end
+    class TimeParser
+      def initialize(date = Date.today)
+        @date = date
+      end
+      def parse(value)
+        value = value.gsub(%r{\*+$}, '')
+        return value if ['On time', 'Starts here', 'No report'].include?(value)
+        parts = value.scan(%r{\d{2}})
+        return nil unless parts.length == 2
+        Time.zone.parse("#{@date} #{parts.join(':')}")
+      end
+    end
   end
 end
 
@@ -46,9 +58,10 @@ module NationalRail
 
       def details
         @agent.transact do
+          time_parser = TimeParser.new
           page = @details_link.click
           VirginLiveDepartureBoards.capture(page, @details_link.href)
-          parser = DetailsPageParser.new(page.doc)
+          parser = DetailsPageParser.new(page.doc, time_parser)
           parser.parse
         end
       end
@@ -71,7 +84,7 @@ module NationalRail
     end
 
     def summary(station_code)
-      @date = Date.today
+      time_parser = TimeParser.new
       summary_rows = []
       filename = "summary.aspx?T=#{station_code}"
       @agent.get("http://realtime.nationalrail.co.uk/virgintrains/#{filename}") do |page|
@@ -83,12 +96,12 @@ module NationalRail
           details_link = page.links.detect { |l| l.attributes["href"] == details_href }
           SummaryRow.new(@agent, details_link, {
             :from => (tds[0]/"a").inner_text.gsub(/\s+/, ' '),
-            :timetabled_arrival => parse_time(cell_text(tds[1])),
-            :expected_arrival => parse_time(cell_text(tds[2])),
+            :timetabled_arrival => time_parser.parse(cell_text(tds[1])),
+            :expected_arrival => time_parser.parse(cell_text(tds[2])),
             :platform => parse_integer(cell_text(tds[3])),
             :to => (tds[4]/"a").inner_text.gsub(/\s+/, ' '),
-            :timetabled_departure => parse_time(cell_text(tds[5])),
-            :expected_departure => parse_time(cell_text(tds[6])),
+            :timetabled_departure => time_parser.parse(cell_text(tds[5])),
+            :expected_departure => time_parser.parse(cell_text(tds[6])),
             :details_url => "http://realtime.nationalrail.co.uk/virgintrains/#{details_href}"
           })
         end
@@ -97,14 +110,6 @@ module NationalRail
     end
 
     private
-
-    def parse_time(value)
-      value = value.gsub(%r{\*+$}, '')
-      return value if ['On time', 'Starts here'].include?(value)
-      parts = value.scan(%r{\d{2}})
-      return nil unless parts.length == 2
-      Time.zone.parse("#{@date} #{parts.join(':')}")
-    end
 
     def parse_integer(value)
       Integer(value) rescue nil

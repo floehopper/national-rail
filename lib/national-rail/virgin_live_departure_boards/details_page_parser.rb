@@ -4,8 +4,8 @@ module NationalRail
 
       include CellParser
 
-      def initialize(doc)
-        @doc = doc
+      def initialize(doc, time_parser)
+        @doc, @time_parser = doc, time_parser
       end
 
       def parse
@@ -17,8 +17,8 @@ module NationalRail
             next unless tds.length == 3
             will_call_at << {
               :station => cell_text(tds[0]),
-              :timetabled_arrival => cell_text(tds[1]),
-              :expected_arrival => cell_text(tds[2])
+              :timetabled_arrival => @time_parser.parse(cell_text(tds[1])),
+              :expected_arrival => @time_parser.parse(cell_text(tds[2]))
             }
           end
         end
@@ -30,9 +30,9 @@ module NationalRail
             next unless tds.length == 4
             previous_calling_points << {
               :station => cell_text(tds[0]),
-              :timetabled_departure => cell_text(tds[1]),
-              :expected_departure => cell_text(tds[2]),
-              :actual_departure => cell_text(tds[3])
+              :timetabled_departure => @time_parser.parse(cell_text(tds[1])),
+              :expected_departure => @time_parser.parse(cell_text(tds[2])),
+              :actual_departure => @time_parser.parse(cell_text(tds[3]))
             }
           end
         end
