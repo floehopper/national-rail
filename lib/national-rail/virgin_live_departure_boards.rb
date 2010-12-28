@@ -92,6 +92,7 @@ module NationalRail
     end
 
     def summary(station_code)
+      @date = Date.today
       summary_rows = []
       filename = "summary.aspx?T=#{station_code}"
       @agent.get("http://realtime.nationalrail.co.uk/virgintrains/#{filename}") do |page|
@@ -103,17 +104,23 @@ module NationalRail
           details_link = page.links.detect { |l| l.attributes["href"] == details_href }
           SummaryRow.new(@agent, details_link, {
             :from => (tds[0]/"a").inner_text.gsub(/\s+/, " "),
-            :timetabled_arrival => cell_text(tds[1]),
-            :expected_arrival => cell_text(tds[2]),
+            :timetabled_arrival => parse_time(cell_text(tds[1])),
+            :expected_arrival => parse_time(cell_text(tds[2])),
             :platform => cell_text(tds[3]),
             :to => (tds[4]/"a").inner_text,
-            :timetabled_departure => cell_text(tds[5]),
-            :expected_departure => cell_text(tds[6]),
+            :timetabled_departure => parse_time(cell_text(tds[5])),
+            :expected_departure => parse_time(cell_text(tds[6])),
             :details_url => "http://realtime.nationalrail.co.uk/virgintrains/#{details_href}"
           })
         end
       end
       summary_rows
+    end
+
+    private
+
+    def parse_time(hhmm)
+      Time.zone.parse("#{@date} #{hhmm.scan(%r{\d{2}}).join(':')}")
     end
 
   end
