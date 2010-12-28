@@ -120,9 +120,10 @@ module NationalRail
 
     private
 
-    def parse_time(hhmm)
-      return hhmm if hhmm == 'On time'
-      parts = hhmm.scan(%r{\d{2}})
+    def parse_time(value)
+      value = value.gsub(%r{\*+$}, '')
+      return value if ['On time', 'Starts here'].include?(value)
+      parts = value.scan(%r{\d{2}})
       return nil unless parts.length == 2
       Time.zone.parse("#{@date} #{parts.join(':')}")
     end

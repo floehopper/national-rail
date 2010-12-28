@@ -35,8 +35,12 @@ class VirginLiveDepartureBoardsTest < Test::Unit::TestCase
     assert_nil rows[3][:timetabled_departure]
     assert_nil rows[3][:expected_departure]
 
+    assert_equal 'On time', rows[4][:expected_departure]
+
     assert_nil rows[8][:timetabled_arrival]
     assert_nil rows[8][:expected_arrival]
+
+    assert_equal 'Starts here', rows[21][:expected_departure]
 
     assert_equal ['Inverness', 'Birmingham New Street', 'Metro Centre', 'Carlisle', 'Manchester Airport'], rows[2..6].map { |r| r[:from] }
 
