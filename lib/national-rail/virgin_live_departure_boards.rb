@@ -7,7 +7,7 @@ module NationalRail
   class VirginLiveDepartureBoards
     module CellParser
       def cell_text(td)
-        td.inner_html.gsub("&nbsp;", "")
+        td.inner_html.gsub('&nbsp;', '')
       end
     end
     class TimeParser
