@@ -6,7 +6,7 @@ require "rake/testtask"
 require 'bundler/setup'
 require 'national-rail'
 
-task :default => [:test, :package]
+task :default => :test
 
 desc "Run tests"
 Rake::TestTask.new do |t|
