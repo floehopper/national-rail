@@ -8,10 +8,10 @@ class JourneyPlannerTest < Test::Unit::TestCase
   end
 
   def test_sample
-    stub_request(:get, "www.nationalrail.co.uk/").to_return(html_body("fixtures/index.html"))
-    stub_request(:post, "ojp.nationalrail.co.uk/en/s/planjourney/plan").to_return(html_body("fixtures/sample/summary.html"))
+    stub_request(:get, "www.nationalrail.co.uk/").to_return(html_body("fixtures/journey_planner/index.html"))
+    stub_request(:post, "ojp.nationalrail.co.uk/en/s/planjourney/plan").to_return(html_body("fixtures/journey_planner/sample/summary.html"))
     (1..5).each do |index|
-      stub_request(:get, "ojp.nationalrail.co.uk/en/s/timetable/details").with(details_query(index)).to_return(html_body("fixtures/sample/details-#{index}.html"))
+      stub_request(:get, "ojp.nationalrail.co.uk/en/s/timetable/details").with(details_query(index)).to_return(html_body("fixtures/journey_planner/sample/details-#{index}.html"))
     end
     rows = @planner.plan(
       :from => "London Kings Cross",
@@ -57,10 +57,10 @@ class JourneyPlannerTest < Test::Unit::TestCase
   end
 
   def test_cancelled
-    stub_request(:get, "www.nationalrail.co.uk/").to_return(html_body("fixtures/index.html"))
-    stub_request(:post, "ojp.nationalrail.co.uk/en/s/planjourney/plan").to_return(html_body("fixtures/cancelled/summary.html"))
+    stub_request(:get, "www.nationalrail.co.uk/").to_return(html_body("fixtures/journey_planner/index.html"))
+    stub_request(:post, "ojp.nationalrail.co.uk/en/s/planjourney/plan").to_return(html_body("fixtures/journey_planner/cancelled/summary.html"))
     (1..5).each do |index|
-      stub_request(:get, "ojp.nationalrail.co.uk/en/s/timetable/details").with(details_query(index)).to_return(html_body("fixtures/cancelled/details-#{index}.html"))
+      stub_request(:get, "ojp.nationalrail.co.uk/en/s/timetable/details").with(details_query(index)).to_return(html_body("fixtures/journey_planner/cancelled/details-#{index}.html"))
     end
     rows = @planner.plan(
       :from => "Doncaster",
