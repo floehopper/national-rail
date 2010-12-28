@@ -103,11 +103,11 @@ module NationalRail
           details_href = (tds[0]/"a").first["href"]
           details_link = page.links.detect { |l| l.attributes["href"] == details_href }
           SummaryRow.new(@agent, details_link, {
-            :from => (tds[0]/"a").inner_text.gsub(/\s+/, " "),
+            :from => (tds[0]/"a").inner_text.gsub(/\s+/, ' '),
             :timetabled_arrival => parse_time(cell_text(tds[1])),
             :expected_arrival => parse_time(cell_text(tds[2])),
             :platform => cell_text(tds[3]),
-            :to => (tds[4]/"a").inner_text,
+            :to => (tds[4]/"a").inner_text.gsub(/\s+/, ' '),
             :timetabled_departure => parse_time(cell_text(tds[5])),
             :expected_departure => parse_time(cell_text(tds[6])),
             :details_url => "http://realtime.nationalrail.co.uk/virgintrains/#{details_href}"
