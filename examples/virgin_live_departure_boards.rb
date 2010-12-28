@@ -2,6 +2,7 @@ require "rubygems"
 require "bundler/setup"
 require "national-rail"
 
+Time.zone = "London"
 boards = NationalRail::VirginLiveDepartureBoards.new
 boards.summary("DHM").each do |row|
   puts
