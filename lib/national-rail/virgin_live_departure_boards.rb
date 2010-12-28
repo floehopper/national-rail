@@ -121,7 +121,10 @@ module NationalRail
     private
 
     def parse_time(hhmm)
-      Time.zone.parse("#{@date} #{hhmm.scan(%r{\d{2}}).join(':')}")
+      return hhmm if hhmm == 'On time'
+      parts = hhmm.scan(%r{\d{2}})
+      return nil unless parts.length == 2
+      Time.zone.parse("#{@date} #{parts.join(':')}")
     end
 
     def parse_integer(value)

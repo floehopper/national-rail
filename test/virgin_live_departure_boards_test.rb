@@ -29,10 +29,20 @@ class VirginLiveDepartureBoardsTest < Test::Unit::TestCase
     assert_equal time('12:58'), rows[1][:expected_departure]
     assert_equal 'http://realtime.nationalrail.co.uk/virgintrains/train.aspx?T=NWCSTLE+&J=1364614&R=0', rows[1][:details_url]
 
+    assert_equal 'On time', rows[2][:expected_departure]
+
+    assert_equal 'On time', rows[3][:expected_arrival]
+    assert_nil rows[3][:timetabled_departure]
+    assert_nil rows[3][:expected_departure]
+
+    assert_nil rows[8][:timetabled_arrival]
+    assert_nil rows[8][:expected_arrival]
+
     assert_equal ['Inverness', 'Birmingham New Street', 'Metro Centre', 'Carlisle', 'Manchester Airport'], rows[2..6].map { |r| r[:from] }
-    assert_equal ['London Kings Cross', '**Terminates**', 'Morpeth', '**Terminates**', '**Terminates**'], rows[2..6].map { |r| r[:to] }
 
     assert_equal [4, 2, 5, 1, 9, 7, nil], rows[2..8].map { |r| r[:platform] }
+
+    assert_equal ['London Kings Cross', '**Terminates**', 'Morpeth', '**Terminates**', '**Terminates**'], rows[2..6].map { |r| r[:to] }
   end
 
   private
