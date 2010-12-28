@@ -1,0 +1,265 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta name="generator" content=
+"HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 15.3.6), see www.w3.org" />
+<meta http-equiv="Content-Type" content=
+"text/html; charset=us-ascii" />
+<style type="text/css" media="all">
+/*<![CDATA[*/
+@import "/virgintrains/virgintrains/virgintrains.css";
+/*]]>*/
+</style>
+
+<style type="text/css" media="screen">
+/*<![CDATA[*/
+@import "/virgintrains/virgintrains/screen.css";
+/*]]>*/
+</style>
+
+<style type="text/css" media="print">
+/*<![CDATA[*/
+@import "/virgintrains/virgintrains/print.css";
+/*]]>*/
+</style>
+<title>1344 Newcastle to Penzance</title>
+<link rel="SHORTCUT ICON" href=
+"/virgintrains/virgintrains/favicon.ico" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="now" />
+<meta http-equiv="pics-label" content=
+'(pics-1.1 "http://www.icra.org/ratingsv02.html" comment "ICRAonline v2.0" l gen true for "http://www.livedepartureboards.co.uk" r (nz 1 vz 1 lz 1 oz 1 cz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://www.livedepartureboards.co.uk" r (n 0 s 0 v 0 l 0))' />
+</head>
+<body>
+<div id="Vhead" title="Virgin Trains graphic header">
+<div id="Vlogo" title="Virgin Trains logo"></div>
+</div>
+<div class="LDBtrain">
+<div class="LDBtrain1" title="Train overview">
+<h1 class="trainname">1344 Newcastle to Penzance</h1>
+<div class="tocname">Cross Country</div>
+<ul>
+<li>This train is expected to arrive on platform 4.</li>
+<li>Expected to arrive Newcastle at 1334.</li>
+<li>Expected to depart Newcastle on time.</li>
+</ul>
+</div>
+<div class="LDBtrain2">
+<table id="LDBtrain2" title="Will call at" summary="Will call at">
+<colgroup>
+<col class="station" />
+<col class="time" />
+<col class="time" /></colgroup>
+<tbody>
+<tr>
+<td class="lastupdate" title="Last update time" colspan="3">Last
+updated: 28/12/2010 12:54:26</td>
+</tr>
+<tr class="altrows">
+<td colspan="3">
+<h2>Will Call At:</h2>
+</td>
+</tr>
+<tr>
+<th scope="col" class="station">&Acirc;&nbsp;</th>
+<th scope="col" class="time" abbr="at">Timetabled Arrival</th>
+<th scope="col" class="time" abbr="expected">Expected Arrival</th>
+</tr>
+<tr class="altrows">
+<td class="station">Durham</td>
+<td class="time">1355</td>
+<td class="time">On time</td>
+</tr>
+<tr class="">
+<td class="station">Darlington</td>
+<td class="time">1412</td>
+<td class="time">On time</td>
+</tr>
+<tr class="altrows">
+<td class="station">York</td>
+<td class="time">1441</td>
+<td class="time">On time</td>
+</tr>
+<tr class="">
+<td class="station">Leeds</td>
+<td class="time">1508</td>
+<td class="time">On time</td>
+</tr>
+<tr class="altrows">
+<td class="station">Wakefield Westgate</td>
+<td class="time">1523</td>
+<td class="time">On time</td>
+</tr>
+<tr class="">
+<td class="station">Sheffield</td>
+<td class="time">1551</td>
+<td class="time">On time</td>
+</tr>
+<tr class="altrows">
+<td class="station">Chesterfield</td>
+<td class="time">1605</td>
+<td class="time">On time</td>
+</tr>
+<tr class="">
+<td class="station">Derby</td>
+<td class="time">1625</td>
+<td class="time">On time</td>
+</tr>
+<tr class="altrows">
+<td class="station">Burton-on-Trent</td>
+<td class="time">1637</td>
+<td class="time">On time</td>
+</tr>
+<tr class="">
+<td class="station">Tamworth</td>
+<td class="time">1647</td>
+<td class="time">On time</td>
+</tr>
+<tr class="altrows">
+<td class="station">Birmingham New Street</td>
+<td class="time">1709</td>
+<td class="time">On time</td>
+</tr>
+<tr class="">
+<td class="station">Cheltenham Spa</td>
+<td class="time">1750</td>
+<td class="time">On time</td>
+</tr>
+<tr class="altrows">
+<td class="station">Bristol Parkway</td>
+<td class="time">1827</td>
+<td class="time">On time</td>
+</tr>
+<tr class="">
+<td class="station">Bristol Temple Meads</td>
+<td class="time">1840</td>
+<td class="time">On time</td>
+</tr>
+<tr class="altrows">
+<td class="station">Taunton</td>
+<td class="time">1915</td>
+<td class="time">On time</td>
+</tr>
+<tr class="">
+<td class="station">Tiverton Parkway</td>
+<td class="time">1928</td>
+<td class="time">On time</td>
+</tr>
+<tr class="altrows">
+<td class="station">Exeter St Davids</td>
+<td class="time">1943</td>
+<td class="time">On time</td>
+</tr>
+<tr class="">
+<td class="station">Newton Abbot</td>
+<td class="time">2004</td>
+<td class="time">On time</td>
+</tr>
+<tr class="altrows">
+<td class="station">Totnes</td>
+<td class="time">2017</td>
+<td class="time">On time</td>
+</tr>
+<tr class="">
+<td class="station">Plymouth</td>
+<td class="time">2045</td>
+<td class="time">On time</td>
+</tr>
+<tr class="altrows">
+<td class="station">Liskeard</td>
+<td class="time">2113</td>
+<td class="time">On time</td>
+</tr>
+<tr class="">
+<td class="station">Bodmin Parkway</td>
+<td class="time">2125</td>
+<td class="time">On time</td>
+</tr>
+<tr class="altrows">
+<td class="station">Lostwithiel</td>
+<td class="time">2131</td>
+<td class="time">On time</td>
+</tr>
+<tr class="">
+<td class="station">Par</td>
+<td class="time">2139</td>
+<td class="time">On time</td>
+</tr>
+<tr class="altrows">
+<td class="station">St Austell</td>
+<td class="time">2145</td>
+<td class="time">On time</td>
+</tr>
+<tr class="">
+<td class="station">Truro</td>
+<td class="time">2203</td>
+<td class="time">On time</td>
+</tr>
+<tr class="altrows">
+<td class="station">Redruth</td>
+<td class="time">2214</td>
+<td class="time">On time</td>
+</tr>
+<tr class="">
+<td class="station">Camborne</td>
+<td class="time">2221</td>
+<td class="time">On time</td>
+</tr>
+<tr class="altrows">
+<td class="station">Hayle</td>
+<td class="time">2229</td>
+<td class="time">On time</td>
+</tr>
+<tr class="">
+<td class="station">St Erth</td>
+<td class="time">2234</td>
+<td class="time">On time</td>
+</tr>
+<tr class="altrows">
+<td class="station">Penzance</td>
+<td class="time">2243</td>
+<td class="time">On time</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="LDBtrain3">
+<table id="LDBtrain3" title="Previous calling points" summary=
+"Previous calling points">
+<colgroup>
+<col class="station" />
+<col class="time" />
+<col class="time" />
+<col class="time" /></colgroup>
+<tbody>
+<tr class="altrows">
+<td colspan="4">
+<h2>Previous Calling Points:</h2>
+</td>
+</tr>
+<tr>
+<th scope="col" class="station">&Acirc;&nbsp;</th>
+<th scope="col" class="time" abbr="at">Timetabled Departure</th>
+<th scope="col" class="time" abbr="expected">Expected
+Departure</th>
+<th scope="col" class="time" abbr="actual">Actual Departure</th>
+</tr>
+<tr class="altrows">
+<td class="station">Edinburgh</td>
+<td class="time">1205</td>
+<td class="">&Acirc;&nbsp;</td>
+<td class="time">On time</td>
+</tr>
+<tr class="">
+<td class="station">Alnmouth</td>
+<td class="time">1305</td>
+<td class="time">On time</td>
+<td class="">&Acirc;&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html>

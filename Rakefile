@@ -3,6 +3,9 @@ require "rake/gempackagetask"
 require "rake/rdoctask"
 require "rake/testtask"
 
+require 'bundler/setup'
+require 'national-rail'
+
 task :default => [:test, :package]
 
 desc "Run tests"
@@ -152,4 +155,13 @@ end
 desc "Tag and publish the gem to rubygems.org"
 task :publish => :tag do
   `gem push pkg/#{spec.name}-#{spec.version}.gem`
+end
+
+namespace :generate do
+  desc "Generate fresh test fixtures"
+  task :fixtures do
+    NationalRail::VirginLiveDepartureBoards.capture_path = File.join(File.dirname(__FILE__), 'test', 'fixtures', 'virgin_live_departure_boards', Time.now.strftime("%Y-%m-%d-%H%M.%S"))
+    boards = NationalRail::VirginLiveDepartureBoards.new
+    boards.summary("NCL").each { |row| row.details }
+  end
 end

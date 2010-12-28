@@ -6,6 +6,19 @@ module NationalRail
 
   class VirginLiveDepartureBoards
 
+    class << self
+      attr_accessor :capture_path
+      def capture(page, filename)
+        if capture_path.present?
+          FileUtils.mkdir_p(capture_path)
+          path = File.join(capture_path, filename)
+          File.open(path, "w") { |f| f.write(TidyFFI::Tidy.new(page.parser.to_html).clean) }
+        end
+      rescue => e
+        puts e
+      end
+    end
+
     module CellParser
       def cell_text(td)
         td.inner_html.gsub("&nbsp;", "")
@@ -25,6 +38,7 @@ module NationalRail
       def details
         @agent.transact do
           page = @details_link.click
+          VirginLiveDepartureBoards.capture(page, @details_link.href)
           will_call_at = []
           table = page.doc/"table[@summary='Will call at']"
           if table.any?
@@ -75,14 +89,16 @@ module NationalRail
 
     def summary(station_code)
       summary_rows = []
-      @agent.get("http://realtime.nationalrail.co.uk/virgintrains/summary.aspx?T=#{station_code}") do |page|
+      filename = "summary.aspx?T=#{station_code}"
+      @agent.get("http://realtime.nationalrail.co.uk/virgintrains/#{filename}") do |page|
+        VirginLiveDepartureBoards.capture(page, filename)
         encoding = 'UTF-8'
         summary_rows = (page.doc/"table#TrainTable tbody tr")[2..-1].map do |tr|
           tds = tr/"td"
           details_href = (tds[0]/"a").first["href"]
           details_link = page.links.detect { |l| l.attributes["href"] == details_href }
           SummaryRow.new(@agent, details_link, {
-            :from => (tds[0]/"a").inner_text,
+            :from => (tds[0]/"a").inner_text.gsub(/\s+/, " "),
             :timetabled_arrival => cell_text(tds[1]),
             :expected_arrival => cell_text(tds[2]),
             :platform => cell_text(tds[3]),
