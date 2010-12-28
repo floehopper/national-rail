@@ -4,6 +4,18 @@ require 'active_support'
 require 'tidy_ffi'
 
 module NationalRail
+  class VirginLiveDepartureBoards
+    module CellParser
+      def cell_text(td)
+        td.inner_html.gsub("&nbsp;", "")
+      end
+    end
+  end
+end
+
+require 'national-rail/virgin_live_departure_boards/details_page_parser'
+
+module NationalRail
 
   class VirginLiveDepartureBoards
 
@@ -20,15 +32,7 @@ module NationalRail
       end
     end
 
-    module CellParser
-      def cell_text(td)
-        td.inner_html.gsub("&nbsp;", "")
-      end
-    end
-
     class SummaryRow
-
-      include CellParser
 
       attr_reader :attributes
 
@@ -44,34 +48,8 @@ module NationalRail
         @agent.transact do
           page = @details_link.click
           VirginLiveDepartureBoards.capture(page, @details_link.href)
-          will_call_at = []
-          table = page.doc/"table[@summary='Will call at']"
-          if table.any?
-            (table/"tbody tr").each do |tr|
-              tds = tr/"td"
-              next unless tds.length == 3
-              will_call_at << {
-                :station => cell_text(tds[0]),
-                :timetabled_arrival => cell_text(tds[1]),
-                :expected_arrival => cell_text(tds[2])
-              }
-            end
-          end
-          previous_calling_points = []
-          table = page.doc/"table[@summary='Previous calling points']"
-          if table.any?
-            (table/"tbody tr").each do |tr|
-              tds = tr/"td"
-              next unless tds.length == 4
-              previous_calling_points << {
-                :station => cell_text(tds[0]),
-                :timetabled_departure => cell_text(tds[1]),
-                :expected_departure => cell_text(tds[2]),
-                :actual_departure => cell_text(tds[3])
-              }
-            end
-          end
-          { :will_call_at => will_call_at, :previous_calling_points => previous_calling_points }
+          parser = DetailsPageParser.new(page.doc)
+          parser.parse
         end
       end
     end
