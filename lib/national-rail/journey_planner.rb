@@ -139,12 +139,15 @@ module NationalRail
           raise InputError.new((times_page.doc/".error-message").first.inner_text.gsub(/\s+/, " ").strip)
         end
 
-        date = Date.parse((times_page.doc/".journey-details span").first.children.first.inner_text.gsub(/\s+/, " ").gsub(/\+ 1 day/, '').strip)
+        year = options[:time].year
+        date_as_string = (times_page.doc/".journey-details span").first.children.first.inner_text.gsub(/\s+/, " ").gsub(/\+ 1 day/, '').strip
+        date = Date.parse("#{date_as_string} #{year}")
 
         (times_page.doc/"table#outboundJourneyTable > tbody > tr").reject { |tr| %w(status changes).include?(tr.attributes["class"].value) }.each do |tr|
 
           if (tr.attributes["class"].value == "day-heading")
-            date = Date.parse((tr/"th > p > span").first.inner_text.strip)
+            date_as_string = (tr/"th > p > span").first.inner_text.strip
+            date = Date.parse("#{date_as_string} #{year}")
             next
           end
 

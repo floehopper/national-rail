@@ -1,10 +1,15 @@
 require File.join(File.dirname(__FILE__), 'test_helper')
+require 'timecop'
 
 class JourneyPlannerTest < Test::Unit::TestCase
 
   def setup
     Time.zone = "London"
     @planner = NationalRail::JourneyPlanner.new
+  end
+
+  def teardown
+    Timecop.return
   end
 
   def test_sample
@@ -72,6 +77,18 @@ class JourneyPlannerTest < Test::Unit::TestCase
       assert_equal({}, rows[index].details, "row: #{index}")
     end
     assert_not_requested(:get, "ojp.nationalrail.co.uk/en/s/timetable/details", details_query(2))
+  end
+
+  def test_year_end
+    stub_request(:get, "www.nationalrail.co.uk/").to_return(html_body("fixtures/journey_planner/index.html"))
+    stub_request(:post, "ojp.nationalrail.co.uk/en/s/planjourney/plan").to_return(html_body("fixtures/journey_planner/year_end/summary.html"))
+    Timecop.travel(Time.zone.parse("2010-12-31 18:00"))
+    rows = @planner.plan(
+      :from => "Doncaster",
+      :to => "Glasgow Central",
+      :time => Time.zone.parse("2011-01-01 09:00")
+    )
+    assert_equal Time.zone.parse("2011-01-01 08:59"), rows[0].departure_time
   end
 
   private
