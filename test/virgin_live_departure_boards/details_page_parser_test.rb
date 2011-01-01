@@ -4,7 +4,12 @@ class DetailsPageParserTest < Test::Unit::TestCase
 
   def setup
     Time.zone = "London"
+    Timecop.travel(Time.zone.parse("2010-12-28 00:00"))
     @time_parser = NationalRail::VirginLiveDepartureBoards::TimeParser.new
+  end
+
+  def teardown
+    Timecop.return
   end
 
   def test_sample_1

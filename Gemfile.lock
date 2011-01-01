@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    national-rail (0.4.2)
+    national-rail (0.4.3)
       activesupport (~> 3.0.0)
       ffi (= 0.6.3)
       hpricot (~> 0.8.2)
@@ -20,7 +20,7 @@ GEM
     ffi (0.6.3)
       rake (>= 0.8.7)
     hpricot (0.8.3)
-    i18n (0.4.1)
+    i18n (0.4.2)
     mechanize (1.0.0)
       nokogiri (>= 1.2.1)
     nokogiri (1.4.4)

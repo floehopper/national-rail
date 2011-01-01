@@ -7,8 +7,13 @@ class VirginLiveDepartureBoardsTest < Test::Unit::TestCase
     @boards = NationalRail::VirginLiveDepartureBoards.new
   end
 
+  def teardown
+    Timecop.return
+  end
+
   def test_sample
     stub_request(:get, "realtime.nationalrail.co.uk/virgintrains/summary.aspx?T=NCL").to_return(html_body("fixtures/virgin_live_departure_boards/2010-12-28-1254.22/summary.aspx?T=NCL"))
+    Timecop.travel(Time.zone.parse("2010-12-28 00:00"))
     rows = @boards.summary("NCL")
 
     assert_equal 'Bristol Temple Meads', rows[0][:from]
