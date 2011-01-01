@@ -23,6 +23,7 @@ class VirginLiveDepartureBoardsTest < Test::Unit::TestCase
     assert_equal 'Edinburgh', rows[0][:to]
     assert_equal time('12:40'), rows[0][:timetabled_departure]
     assert_equal time('12:53'), rows[0][:expected_departure]
+    assert_equal 'Cross Country', rows[0][:operator]
     assert_equal 'http://realtime.nationalrail.co.uk/virgintrains/train.aspx?T=NWCSTLE+&J=1371985&R=0', rows[0][:details_url]
 
     assert_equal 'London Kings Cross', rows[1][:from]
@@ -32,6 +33,7 @@ class VirginLiveDepartureBoardsTest < Test::Unit::TestCase
     assert_equal 'Edinburgh', rows[1][:to]
     assert_equal time('12:57'), rows[1][:timetabled_departure]
     assert_equal time('12:58'), rows[1][:expected_departure]
+    assert_equal 'East Coast', rows[1][:operator]
     assert_equal 'http://realtime.nationalrail.co.uk/virgintrains/train.aspx?T=NWCSTLE+&J=1364614&R=0', rows[1][:details_url]
 
     assert_equal 'On time', rows[2][:expected_departure]

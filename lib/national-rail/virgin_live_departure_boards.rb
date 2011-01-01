@@ -102,6 +102,7 @@ module NationalRail
             :to => (tds[4]/"a").inner_text.gsub(/\s+/, ' '),
             :timetabled_departure => time_parser.parse(cell_text(tds[5])),
             :expected_departure => time_parser.parse(cell_text(tds[6])),
+            :operator => (tds[7]/"a").inner_text.gsub(/\s+/, ' '),
             :details_url => "http://realtime.nationalrail.co.uk/virgintrains/#{details_href}"
           })
         end
