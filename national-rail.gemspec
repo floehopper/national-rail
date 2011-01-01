@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{national-rail}
-  s.version = "0.4.4"
+  s.version = "0.4.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["James Mead"]
@@ -30,6 +30,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<i18n>, ["~> 0.4.1"])
       s.add_runtime_dependency(%q<tzinfo>, ["~> 0.3.23"])
       s.add_development_dependency(%q<webmock>, ["~> 1.6.1"])
+      s.add_development_dependency(%q<timecop>, ["~> 0.3.4"])
     else
       s.add_dependency(%q<mechanize>, ["~> 1.0.0"])
       s.add_dependency(%q<hpricot>, ["~> 0.8.2"])
@@ -40,6 +41,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<i18n>, ["~> 0.4.1"])
       s.add_dependency(%q<tzinfo>, ["~> 0.3.23"])
       s.add_dependency(%q<webmock>, ["~> 1.6.1"])
+      s.add_dependency(%q<timecop>, ["~> 0.3.4"])
     end
   else
     s.add_dependency(%q<mechanize>, ["~> 1.0.0"])
@@ -51,5 +53,6 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<i18n>, ["~> 0.4.1"])
     s.add_dependency(%q<tzinfo>, ["~> 0.3.23"])
     s.add_dependency(%q<webmock>, ["~> 1.6.1"])
+    s.add_dependency(%q<timecop>, ["~> 0.3.4"])
   end
 end
