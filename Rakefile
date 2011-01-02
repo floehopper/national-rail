@@ -161,8 +161,9 @@ end
 namespace :generate do
   desc "Generate fresh test fixtures"
   task :fixtures do
+    Time.zone = "London"
     NationalRail::VirginLiveDepartureBoards.capture_path = File.join(File.dirname(__FILE__), 'test', 'fixtures', 'virgin_live_departure_boards', Time.now.strftime("%Y-%m-%d-%H%M.%S"))
     boards = NationalRail::VirginLiveDepartureBoards.new
-    boards.summary("NCL").each { |row| row.details }
+    boards.summary("KGX").each { |row| row.details }
   end
 end
