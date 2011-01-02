@@ -2,12 +2,14 @@ require 'mechanize'
 require 'hpricot'
 require 'active_support'
 require 'tidy_ffi'
+require 'htmlentities'
 
 module NationalRail
   class VirginLiveDepartureBoards
     module CellParser
       def cell_text(td)
-        td.inner_html.gsub('&nbsp;', '')
+        decoder = HTMLEntities.new
+        decoder.decode(td.inner_html)
       end
     end
     class TimeParser

@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["James Mead"]
-  s.date = %q{2011-01-01}
+  s.date = %q{2011-01-02}
   s.description = %q{Includes journey planner, live departure boards (both National Rail & Virgin), and a station list with GPS co-ordinates.}
   s.email = %q{james@floehopper.org}
   s.files = ["lib/national-rail", "lib/national-rail.rb", "lib/national-rail/journey_planner", "lib/national-rail/journey_planner.rb", "lib/national-rail/journey_planner/details_page_parser.rb", "lib/national-rail/live_departure_boards.rb", "lib/national-rail/station_list.rb", "lib/national-rail/stations.kml", "lib/national-rail/virgin_live_departure_boards", "lib/national-rail/virgin_live_departure_boards.rb", "lib/national-rail/virgin_live_departure_boards/details_page_parser.rb"]
@@ -29,6 +29,7 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<tidy_ffi>, ["~> 0.1.3"])
       s.add_runtime_dependency(%q<i18n>, ["~> 0.4.1"])
       s.add_runtime_dependency(%q<tzinfo>, ["~> 0.3.23"])
+      s.add_runtime_dependency(%q<htmlentities>, ["~> 4.2.2"])
       s.add_development_dependency(%q<webmock>, ["~> 1.6.1"])
       s.add_development_dependency(%q<timecop>, ["~> 0.3.4"])
     else
@@ -40,6 +41,7 @@ Gem::Specification.new do |s|
       s.add_dependency(%q<tidy_ffi>, ["~> 0.1.3"])
       s.add_dependency(%q<i18n>, ["~> 0.4.1"])
       s.add_dependency(%q<tzinfo>, ["~> 0.3.23"])
+      s.add_dependency(%q<htmlentities>, ["~> 4.2.2"])
       s.add_dependency(%q<webmock>, ["~> 1.6.1"])
       s.add_dependency(%q<timecop>, ["~> 0.3.4"])
     end
@@ -52,6 +54,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<tidy_ffi>, ["~> 0.1.3"])
     s.add_dependency(%q<i18n>, ["~> 0.4.1"])
     s.add_dependency(%q<tzinfo>, ["~> 0.3.23"])
+    s.add_dependency(%q<htmlentities>, ["~> 4.2.2"])
     s.add_dependency(%q<webmock>, ["~> 1.6.1"])
     s.add_dependency(%q<timecop>, ["~> 0.3.4"])
   end

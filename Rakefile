@@ -51,6 +51,7 @@ spec = Gem::Specification.new do |s|
   s.add_dependency("tidy_ffi", "~> 0.1.3")
   s.add_dependency("i18n", "~> 0.4.1")
   s.add_dependency("tzinfo", "~> 0.3.23")
+  s.add_dependency("htmlentities", "~> 4.2.2")
   s.add_development_dependency("webmock", "~> 1.6.1")
   s.add_development_dependency("timecop", "~> 0.3.4")
 

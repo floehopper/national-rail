@@ -70,6 +70,12 @@ class DetailsPageParserTest < Test::Unit::TestCase
     assert_equal 'On time', details[:will_call_at][0][:expected_arrival]
   end
 
+  def test_sample_4
+    doc = Nokogiri(File.open(File.join(File.dirname(__FILE__), '..', 'fixtures', 'virgin_live_departure_boards', '2011-01-02-1754.09', 'term.aspx?T=KNGX++++&J=1471779&R=0')))
+    details = NationalRail::VirginLiveDepartureBoards::DetailsPageParser.new(doc, @time_parser).parse
+    assert_equal 'Dunkeld & Birnam', details[:previous_calling_points][7][:station]
+  end
+
   private
 
   def time(hhmm)

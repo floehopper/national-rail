@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta name="generator" content=
+"HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 15.3.6), see www.w3.org" />
+<meta http-equiv="Content-Type" content=
+"text/html; charset=us-ascii" />
+<style type="text/css" media="all">
+/*<![CDATA[*/
+@import "/virgintrains/virgintrains/virgintrains.css";
+/*]]>*/
+</style>
+
+<style type="text/css" media="screen">
+/*<![CDATA[*/
+@import "/virgintrains/virgintrains/screen.css";
+/*]]>*/
+</style>
+
+<style type="text/css" media="print">
+/*<![CDATA[*/
+@import "/virgintrains/virgintrains/print.css";
+/*]]>*/
+</style>
+<title>1930 London Kings Cross to Leeds</title>
+<link rel="SHORTCUT ICON" href=
+"/virgintrains/virgintrains/favicon.ico" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="now" />
+<meta http-equiv="pics-label" content=
+'(pics-1.1 "http://www.icra.org/ratingsv02.html" comment "ICRAonline v2.0" l gen true for "http://www.livedepartureboards.co.uk" r (nz 1 vz 1 lz 1 oz 1 cz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://www.livedepartureboards.co.uk" r (n 0 s 0 v 0 l 0))' />
+</head>
+<body>
+<div id="Vhead" title="Virgin Trains graphic header">
+<div id="Vlogo" title="Virgin Trains logo"></div>
+</div>
+<div class="LDBtrain">
+<div class="LDBtrain1" title="Train overview">
+<h1 class="trainname">1930 London Kings Cross to Leeds</h1>
+<div class="tocname">East Coast</div>
+</div>
+<div class="LDBtrain2">
+<table id="LDBtrain2" title="Will call at" summary="Will call at">
+<colgroup>
+<col class="station" />
+<col class="time" />
+<col class="time" /></colgroup>
+<tbody>
+<tr>
+<td class="lastupdate" title="Last update time" colspan="3">Last
+updated: 02/01/2011 17:54:24</td>
+</tr>
+<tr class="altrows">
+<td colspan="3">
+<h2>Will Call At:</h2>
+</td>
+</tr>
+<tr>
+<th scope="col" class="station">&Acirc;&nbsp;</th>
+<th scope="col" class="time" abbr="at">Timetabled Arrival</th>
+<th scope="col" class="time" abbr="expected">Expected Arrival</th>
+</tr>
+<tr class="altrows">
+<td class="station">Stevenage</td>
+<td class="time">1950</td>
+<td class="time">No report</td>
+</tr>
+<tr class="">
+<td class="station">Peterborough</td>
+<td class="time">2019</td>
+<td class="time">No report</td>
+</tr>
+<tr class="altrows">
+<td class="station">Doncaster</td>
+<td class="time">2110</td>
+<td class="time">No report</td>
+</tr>
+<tr class="">
+<td class="station">Wakefield Westgate</td>
+<td class="time">2127</td>
+<td class="time">No report</td>
+</tr>
+<tr class="altrows">
+<td class="station">Leeds</td>
+<td class="time">2147</td>
+<td class="time">No report</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html>
