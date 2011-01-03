@@ -1,0 +1,972 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta name="generator" content=
+"HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 15.3.6), see www.w3.org" />
+<meta http-equiv="Content-Type" content=
+"text/html; charset=us-ascii" />
+<style type="text/css" media="all">
+/*<![CDATA[*/
+@import "/virgintrains/virgintrains/virgintrains.css";
+/*]]>*/
+</style>
+
+<style type="text/css" media="screen">
+/*<![CDATA[*/
+@import "/virgintrains/virgintrains/screen.css";
+/*]]>*/
+</style>
+
+<style type="text/css" media="print">
+/*<![CDATA[*/
+@import "/virgintrains/virgintrains/print.css";
+/*]]>*/
+</style>
+<link rel="SHORTCUT ICON" href=
+"/virgintrains/virgintrains/favicon.ico" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="now" />
+<meta http-equiv="pics-label" content=
+'(pics-1.1 "http://www.icra.org/ratingsv02.html" comment "ICRAonline v2.0" l gen true for "http://www.livedepartureboards.co.uk" r (nz 1 vz 1 lz 1 oz 1 cz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://www.livedepartureboards.co.uk" r (n 0 s 0 v 0 l 0))' />
+<title>London Kings Cross Train Times</title>
+</head>
+<body>
+<div id="Vhead" title="Virgin Trains graphic header">
+<div id="Vlogo" title="Virgin Trains logo"></div>
+</div>
+<div class="LDBsummary">
+<div class="LDBstation" title="Station overview">
+<h1>Train Times for London Kings Cross (KGX)</h1>
+<ul>
+<li>Call <a href=
+"http://www.nationalrail.co.uk/passenger_services/info_on_the_move/traintracker.html">
+TrainTracker</a>&acirc;&bdquo;&cent; for London Kings Cross on
+0871&Acirc;&nbsp;200&Acirc;&nbsp;49&Acirc;&nbsp;59 or text KGX to
+84950 to use <a href=
+"http://www.nationalrail.co.uk/passenger_services/info_on_the_move/traintrackertext.html">
+TrainTracker&acirc;&bdquo;&cent; Text</a></li>
+<li><a href=
+"http://www.nationalrail.co.uk/stations/index.html?a=findStation&amp;station_query=KGX">
+Information about London Kings Cross station.</a></li>
+<li>These train times are produced by an automated system. <a href=
+"http://www.nationalrail.co.uk/times_fares/live_departure_boards/limitations.htm">
+Our disclaimer</a> explains its limitations.</li>
+<li>This page does not automatically update. <a href=
+"summary.aspx?T=KGX&amp;R=1">Click here for a version that
+automatically updates every 2 minutes.</a></li>
+<li><a href=
+"http://www.nationalrail.co.uk/service_bulletins/today.html">Click
+here for details of engineering works and service
+alterations.</a></li>
+</ul>
+</div>
+<div class="LDBboard" title="Train Departure board">
+<table id="TrainTable" title="Train Departure board" summary=
+"Train Departure board">
+<colgroup>
+<col class="stations" />
+<col class="times" />
+<col class="ontime" />
+<col class="times" />
+<col class="stations" />
+<col class="times" />
+<col class="ontime" />
+<col class="tocs" />
+<col /></colgroup>
+<tbody>
+<tr>
+<td class="service">Trains</td>
+<td class="lastupdate" title="Last update time" colspan="7">Last
+updated: 03/01/2011 15:36:01</td>
+</tr>
+<tr>
+<th scope="col" class="stations">From</th>
+<th scope="col" class="times" abbr="at">Timetabled<br />
+Arrival</th>
+<th scope="col" class="ontime" abbr="expected">Expected<br />
+Arrival</th>
+<th scope="col" class="times" abbr="platform">Platform</th>
+<th scope="col" class="stations">To</th>
+<th scope="col" class="times" abbr="at">Timetabled<br />
+Departure</th>
+<th scope="col" class="ontime" abbr="expected">Expected<br />
+Departure</th>
+<th scope="col" class="tocs">Operator</th>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=KNGX++++&amp;J=1489946&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">0</td>
+<td><a href=
+"train.aspx?T=KNGX++++&amp;J=1489946&amp;R=0">Leeds</a></td>
+<td class="times">1535</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=GR">East
+Coast</a></td>
+</tr>
+<tr>
+<td><a href="term.aspx?T=KNGX++++&amp;J=1485294&amp;R=0">Kings
+Lynn</a></td>
+<td class="times">1535</td>
+<td class="ontime">On time</td>
+<td class="times">3</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1485294&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=KNGX++++&amp;J=1501510&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">10</td>
+<td><a href=
+"train.aspx?T=KNGX++++&amp;J=1501510&amp;R=0">Peterborough</a></td>
+<td class="times">1536</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr>
+<td><a href="term.aspx?T=KNGX++++&amp;J=1484563&amp;R=0">Welwyn
+Garden City</a></td>
+<td class="times">1540</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1484563&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=KNGX++++&amp;J=1484433&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">9</td>
+<td><a href="train.aspx?T=KNGX++++&amp;J=1484433&amp;R=0">Welwyn
+Garden City</a></td>
+<td class="times">1541</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=KNGX++++&amp;J=1482179&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">3</td>
+<td><a href="train.aspx?T=KNGX++++&amp;J=1482179&amp;R=0">Kings
+Lynn</a></td>
+<td class="times">1544</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="term.aspx?T=KNGX++++&amp;J=1491195&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">1545</td>
+<td class="times">1548</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1491195&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=GR">East
+Coast</a></td>
+</tr>
+<tr>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1501741&amp;R=0">Peterborough</a></td>
+<td class="times">1550</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1501741&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1491243&amp;R=0">Inverness</a></td>
+<td class="times">1551</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1491243&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=GR">East
+Coast</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=KNGX++++&amp;J=1483506&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">5</td>
+<td><a href=
+"train.aspx?T=KNGX++++&amp;J=1483506&amp;R=0">Cambridge</a></td>
+<td class="times">1552</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="term.aspx?T=KNGX++++&amp;J=1484034&amp;R=0">Hertford
+North</a></td>
+<td class="times">1555</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1484034&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=KNGX++++&amp;J=1483762&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">8</td>
+<td><a href="train.aspx?T=KNGX++++&amp;J=1483762&amp;R=0">Hertford
+North</a></td>
+<td class="times">1556</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1488542&amp;R=0">Leeds</a></td>
+<td class="times">1558</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1488542&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=GR">East
+Coast</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=KNGX++++&amp;J=1487532&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=KNGX++++&amp;J=1487532&amp;R=0">Aberdeen</a></td>
+<td class="times">1600</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=GR">East
+Coast</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1501230&amp;R=0">Peterborough</a></td>
+<td class="times">1602</td>
+<td class="times">1606</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1501230&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=KNGX++++&amp;J=1483482&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=KNGX++++&amp;J=1483482&amp;R=0">Hull</a></td>
+<td class="times">1605</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=HT">Hull
+Trains</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1482177&amp;R=0">Sunderland</a></td>
+<td class="times">1605</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1482177&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=GC">Grand
+Central</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=KNGX++++&amp;J=1489893&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=KNGX++++&amp;J=1489893&amp;R=0">Cambridge</a></td>
+<td class="times">1606</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1485279&amp;R=0">Cambridge</a></td>
+<td class="times">1608</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1485279&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr>
+<td><a href="term.aspx?T=KNGX++++&amp;J=1484569&amp;R=0">Welwyn
+Garden City</a></td>
+<td class="times">1610</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1484569&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=KNGX++++&amp;J=1481662&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href="train.aspx?T=KNGX++++&amp;J=1481662&amp;R=0">Welwyn
+Garden City</a></td>
+<td class="times">1611</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=KNGX++++&amp;J=1483228&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=KNGX++++&amp;J=1483228&amp;R=0">Cambridge</a></td>
+<td class="times">1615</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1499631&amp;R=0">Cambridge</a></td>
+<td class="times">1617</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1499631&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=KNGX++++&amp;J=1498841&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=KNGX++++&amp;J=1498841&amp;R=0">Peterborough</a></td>
+<td class="times">1622</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1488545&amp;R=0">Leeds</a></td>
+<td class="times">1623</td>
+<td class="late">Delayed</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1488545&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=GR">East
+Coast</a></td>
+</tr>
+<tr>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1484038&amp;R=0">Stevenage</a></td>
+<td class="times">1625</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1484038&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=KNGX++++&amp;J=1481656&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=KNGX++++&amp;J=1481656&amp;R=0">Stevenage</a> via
+Hertford North</td>
+<td class="times">1626</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=KNGX++++&amp;J=1491638&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=KNGX++++&amp;J=1491638&amp;R=0">Edinburgh</a></td>
+<td class="times">1630</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=GR">East
+Coast</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1485609&amp;R=0">Cambridge</a></td>
+<td class="times">1630</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1485609&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr>
+<td><a href="term.aspx?T=KNGX++++&amp;J=1485300&amp;R=0">Kings
+Lynn</a></td>
+<td class="times">1634</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1485300&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=KNGX++++&amp;J=1489963&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=KNGX++++&amp;J=1489963&amp;R=0">Leeds</a></td>
+<td class="times">1635</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=GR">East
+Coast</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=KNGX++++&amp;J=1484331&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=KNGX++++&amp;J=1484331&amp;R=0">Peterborough</a></td>
+<td class="times">1636</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="term.aspx?T=KNGX++++&amp;J=1484575&amp;R=0">Welwyn
+Garden City</a></td>
+<td class="times">1640</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1484575&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=KNGX++++&amp;J=1481668&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href="train.aspx?T=KNGX++++&amp;J=1481668&amp;R=0">Welwyn
+Garden City</a></td>
+<td class="times">1641</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=KNGX++++&amp;J=1482195&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href="train.aspx?T=KNGX++++&amp;J=1482195&amp;R=0">Kings
+Lynn</a></td>
+<td class="times">1644</td>
+<td class="noinfo">Starts here</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1491255&amp;R=0">Edinburgh</a></td>
+<td class="times">1645</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1491255&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=GR">East
+Coast</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=KNGX++++&amp;J=1482551&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=KNGX++++&amp;J=1482551&amp;R=0">Sunderland</a></td>
+<td class="times">1650</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=GC">Grand
+Central</a></td>
+</tr>
+<tr>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1501745&amp;R=0">Peterborough</a></td>
+<td class="times">1650</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1501745&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=KNGX++++&amp;J=1481529&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=KNGX++++&amp;J=1481529&amp;R=0">Cambridge</a></td>
+<td class="times">1652</td>
+<td class="noinfo">Starts here</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr>
+<td><a href="term.aspx?T=KNGX++++&amp;J=1484040&amp;R=0">Hertford
+North</a></td>
+<td class="times">1655</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1484040&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=KNGX++++&amp;J=1483764&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href="train.aspx?T=KNGX++++&amp;J=1483764&amp;R=0">Hertford
+North</a></td>
+<td class="times">1656</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1491266&amp;R=0">Aberdeen</a></td>
+<td class="times">1657</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1491266&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=GR">East
+Coast</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=KNGX++++&amp;J=1487582&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=KNGX++++&amp;J=1487582&amp;R=0">Edinburgh</a></td>
+<td class="times">1700</td>
+<td class="noinfo">Starts here</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=GR">East
+Coast</a></td>
+</tr>
+<tr>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1501236&amp;R=0">Peterborough</a></td>
+<td class="times">1700</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1501236&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=KNGX++++&amp;J=1490015&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=KNGX++++&amp;J=1490015&amp;R=0">Leeds</a></td>
+<td class="times">1703</td>
+<td class="noinfo">Starts here</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=GR">East
+Coast</a></td>
+</tr>
+<tr>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1488604&amp;R=0">Leeds</a></td>
+<td class="times">1704</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1488604&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=GR">East
+Coast</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1485283&amp;R=0">Cambridge</a></td>
+<td class="times">1705</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1485283&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=KNGX++++&amp;J=1489968&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=KNGX++++&amp;J=1489968&amp;R=0">Cambridge</a></td>
+<td class="times">1706</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=KNGX++++&amp;J=1481799&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=KNGX++++&amp;J=1481799&amp;R=0">Peterborough</a></td>
+<td class="times">1707</td>
+<td class="noinfo">Starts here</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr>
+<td><a href="term.aspx?T=KNGX++++&amp;J=1484581&amp;R=0">Welwyn
+Garden City</a></td>
+<td class="times">1710</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1484581&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=KNGX++++&amp;J=1484435&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href="train.aspx?T=KNGX++++&amp;J=1484435&amp;R=0">Welwyn
+Garden City</a></td>
+<td class="times">1711</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=KNGX++++&amp;J=1482264&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=KNGX++++&amp;J=1482264&amp;R=0">Cambridge</a></td>
+<td class="times">1715</td>
+<td class="noinfo">Starts here</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=KNGX++++&amp;J=1491559&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=KNGX++++&amp;J=1491559&amp;R=0">Hull</a></td>
+<td class="times">1719</td>
+<td class="noinfo">Starts here</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=GR">East
+Coast</a></td>
+</tr>
+<tr>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1499643&amp;R=0">Cambridge</a></td>
+<td class="times">1719</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1499643&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=KNGX++++&amp;J=1498877&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=KNGX++++&amp;J=1498877&amp;R=0">Peterborough</a></td>
+<td class="times">1722</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1484042&amp;R=0">Stevenage</a></td>
+<td class="times">1725</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1484042&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=KNGX++++&amp;J=1484236&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=KNGX++++&amp;J=1484236&amp;R=0">Stevenage</a> via
+Hertford North</td>
+<td class="times">1726</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1488614&amp;R=0">Newcastle</a></td>
+<td class="times">1729</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1488614&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=GR">East
+Coast</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1485611&amp;R=0">Cambridge</a></td>
+<td class="times">1730</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1485611&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=KNGX++++&amp;J=1490023&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href="train.aspx?T=KNGX++++&amp;J=1490023&amp;R=0">Bradford
+Forster Square</a></td>
+<td class="times">1733</td>
+<td class="noinfo">Starts here</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=GR">East
+Coast</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=KNGX++++&amp;J=1484333&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=KNGX++++&amp;J=1484333&amp;R=0">Peterborough</a></td>
+<td class="times">1736</td>
+<td class="noinfo">Starts here</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr>
+<td><a href="term.aspx?T=KNGX++++&amp;J=1485302&amp;R=0">Kings
+Lynn</a></td>
+<td class="times">1736</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=1485302&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html>

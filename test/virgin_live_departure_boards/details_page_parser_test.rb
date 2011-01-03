@@ -52,7 +52,7 @@ class DetailsPageParserTest < Test::Unit::TestCase
     assert_equal [nil, nil, nil, nil, nil, nil, nil, nil, nil, nil], previous_expected_departures
 
     previous_actual_departures = details[:previous_calling_points].map { |pcp| pcp[:actual_departure] }
-    assert_equal ['On time', nil, nil, nil, nil, nil, nil, nil, nil, nil], previous_actual_departures
+    assert_equal ['On time', 'Cancelled', 'Cancelled', 'Cancelled', 'Cancelled', 'Cancelled', 'Cancelled', 'Cancelled', 'Cancelled', 'Cancelled'], previous_actual_departures
 
     future_stations = details[:will_call_at].map { |wca| wca[:station] }
     assert_equal ["York", "Grantham", "London Kings Cross"], future_stations
@@ -74,6 +74,13 @@ class DetailsPageParserTest < Test::Unit::TestCase
     doc = Nokogiri(File.open(File.join(File.dirname(__FILE__), '..', 'fixtures', 'virgin_live_departure_boards', '2011-01-02-1754.09', 'term.aspx?T=KNGX++++&J=1471779&R=0')))
     details = NationalRail::VirginLiveDepartureBoards::DetailsPageParser.new(doc, @time_parser).parse
     assert_equal 'Dunkeld & Birnam', details[:previous_calling_points][7][:station]
+  end
+
+  def test_sample_5
+    doc = Nokogiri(File.open(File.join(File.dirname(__FILE__), '..', 'fixtures', 'virgin_live_departure_boards', '2011-01-03-1536.00', 'term.aspx?T=KNGX++++&J=1488545&R=0')))
+    details = NationalRail::VirginLiveDepartureBoards::DetailsPageParser.new(doc, @time_parser).parse
+    assert_equal 'Delayed', details[:previous_calling_points][0][:actual_departure]
+    assert_equal 'Cancelled', details[:previous_calling_points][1][:expected_departure]
   end
 
   private

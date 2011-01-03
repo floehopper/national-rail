@@ -18,7 +18,7 @@ module NationalRail
       end
       def parse(value)
         value = value.gsub(%r{&#\d+;}, '').gsub(%r{\*+$}, '')
-        return value if ['On time', 'Starts here', 'No report'].include?(value)
+        return value if ['On time', 'Starts here', 'No report', 'Cancelled', 'Delayed'].include?(value)
         parts = value.scan(%r{\d{2}})
         return nil unless parts.length == 2
         Time.zone.parse("#{@date} #{parts.join(':')}")
