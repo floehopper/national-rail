@@ -125,12 +125,16 @@ module NationalRail
           form["viaMode"] = "VIA"
           form["via.searchTerm"] = ""
           form["offSetOption"] = "0"
-          form["_reduceTransfers"] = "on"
-          form["operatorMode"] = "SHOW"
+          form["reduceTransfers"] = "true"
+          form["_reduceTransfers"] = "on" # hidden (duplicate of reduceTransfers?)
+          form["operatorMode"] = "SHOW" # alternative is "DONT_SHOW"
           form["operator.code"] = ""
-          form["_lookForSleeper"] = "on"
-          form["_directTrains"] = "on"
-          form["_includeOvertakenTrains"] = "on"
+          form["lookForSleeper"] = "true"
+          form["_lookForSleeper"] = "on" # hidden (duplicate of lookForSleeper?)
+          form["directTrains"] = "true"
+          form["_directTrains"] = "on" # hidden (duplicate of directTrains?)
+          form["includeOvertakenTrains"] = "true"
+          form["_includeOvertakenTrains"] = "on" # hidden (duplicate of includeOvertakenTrains?)
         end.click_button(button)
 
         JourneyPlanner.capture(times_page, "summary.html")
