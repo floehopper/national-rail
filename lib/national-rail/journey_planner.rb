@@ -23,6 +23,36 @@ module NationalRail
 
   class JourneyPlanner
 
+    OPERATORS = {
+      "Arriva Trains Wales" => "AW",
+      "c2c" => "CC",
+      "Chiltern Railways" => "CH",
+      "CrossCountry" => "XC",
+      "East Coast" => "GR",
+      "East Midlands Trains" => "EM",
+      "First Capital Connect" => "FC",
+      "First Great Western" => "GW",
+      "First ScotRail" => "SR",
+      "Gatwick Express" => "GX",
+      "Grand Central Railway" => "GC",
+      "Heathrow Connect" => "HC",
+      "Heathrow Express" => "HX",
+      "Hull Trains" => "HT",
+      "Island Line" => "IL",
+      "London Midland" => "LM",
+      "London Overground" => "LO",
+      "London Underground" => "LT",
+      "Merseyrail" => "ME",
+      "Northern Rail" => "NT",
+      "NXEA" => "LE",
+      "South West Trains" => "SW",
+      "Southeastern" => "SE",
+      "Southern" => "SN",
+      "Transpennine Express" => "TP",
+      "Virgin Trains" => "VT",
+      "Wrexham and Shropshire Railway" => "WS"
+    }
+
     class << self
       attr_accessor :capture_path
       def capture(page, filename)
