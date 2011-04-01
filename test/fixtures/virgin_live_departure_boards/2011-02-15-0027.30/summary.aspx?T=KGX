@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta name="generator" content=
+"HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 15.3.6), see www.w3.org" />
+<meta http-equiv="Content-Type" content=
+"text/html; charset=us-ascii" />
+<style type="text/css" media="all">
+/*<![CDATA[*/
+@import "/virgintrains/virgintrains/virgintrains.css";
+/*]]>*/
+</style>
+
+<style type="text/css" media="screen">
+/*<![CDATA[*/
+@import "/virgintrains/virgintrains/screen.css";
+/*]]>*/
+</style>
+
+<style type="text/css" media="print">
+/*<![CDATA[*/
+@import "/virgintrains/virgintrains/print.css";
+/*]]>*/
+</style>
+<link rel="SHORTCUT ICON" href=
+"/virgintrains/virgintrains/favicon.ico" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="now" />
+<meta http-equiv="pics-label" content=
+'(pics-1.1 "http://www.icra.org/ratingsv02.html" comment "ICRAonline v2.0" l gen true for "http://www.livedepartureboards.co.uk" r (nz 1 vz 1 lz 1 oz 1 cz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://www.livedepartureboards.co.uk" r (n 0 s 0 v 0 l 0))' />
+<title>London Kings Cross Train Times</title>
+</head>
+<body>
+<div id="Vhead" title="Virgin Trains graphic header">
+<div id="Vlogo" title="Virgin Trains logo"></div>
+</div>
+<div class="LDBsummary">
+<div class="LDBstation" title="Station overview">
+<h1>Train Times for London Kings Cross (KGX)</h1>
+<ul>
+<li>Call <a href=
+"http://www.nationalrail.co.uk/passenger_services/info_on_the_move/traintracker.html">
+TrainTracker</a>&acirc;&bdquo;&cent; for London Kings Cross on
+0871&Acirc;&nbsp;200&Acirc;&nbsp;49&Acirc;&nbsp;59 or text KGX to
+84950 to use <a href=
+"http://www.nationalrail.co.uk/passenger_services/info_on_the_move/traintrackertext.html">
+TrainTracker&acirc;&bdquo;&cent; Text</a></li>
+<li><a href=
+"http://www.nationalrail.co.uk/stations/index.html?a=findStation&amp;station_query=KGX">
+Information about London Kings Cross station.</a></li>
+<li>These train times are produced by an automated system. <a href=
+"http://www.nationalrail.co.uk/times_fares/live_departure_boards/limitations.htm">
+Our disclaimer</a> explains its limitations.</li>
+<li>This page does not automatically update. <a href=
+"summary.aspx?T=KGX&amp;R=1">Click here for a version that
+automatically updates every 2 minutes.</a></li>
+<li><a href=
+"http://www.nationalrail.co.uk/service_bulletins/today.html">Click
+here for details of engineering works and service
+alterations.</a></li>
+</ul>
+</div>
+<div class="LDBboard" title="Train Departure board">
+<table id="TrainTable" title="Train Departure board" summary=
+"Train Departure board">
+<colgroup>
+<col class="stations" />
+<col class="times" />
+<col class="ontime" />
+<col class="times" />
+<col class="stations" />
+<col class="times" />
+<col class="ontime" />
+<col class="tocs" />
+<col /></colgroup>
+<tbody>
+<tr>
+<td class="service">Trains</td>
+<td class="lastupdate" title="Last update time" colspan="7">Last
+updated: 15/02/2011 00:27:33</td>
+</tr>
+<tr>
+<th scope="col" class="stations">From</th>
+<th scope="col" class="times" abbr="at">Timetabled<br />
+Arrival</th>
+<th scope="col" class="ontime" abbr="expected">Expected<br />
+Arrival</th>
+<th scope="col" class="times" abbr="platform">Platform</th>
+<th scope="col" class="stations">To</th>
+<th scope="col" class="times" abbr="at">Timetabled<br />
+Departure</th>
+<th scope="col" class="ontime" abbr="expected">Expected<br />
+Departure</th>
+<th scope="col" class="tocs">Operator</th>
+</tr>
+<tr class="altrows">
+<td><a href="term.aspx?T=KNGX++++&amp;J=57761&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">0019</td>
+<td class="late">0108</td>
+<td class="times">5F</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=57761&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=GR">East Coast
+Mainline</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=KNGX++++&amp;J=57247&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=KNGX++++&amp;J=57247&amp;R=0">Peterborough</a></td>
+<td class="times">0036</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=60009&amp;R=0">Hitchin</a></td>
+<td class="times">0042</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=60009&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=KNGX++++&amp;J=57633&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=KNGX++++&amp;J=57633&amp;R=0">Hitchin</a></td>
+<td class="times">0106</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=KNGX++++&amp;J=57249&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=KNGX++++&amp;J=57249&amp;R=0">Peterborough</a></td>
+<td class="times">0136</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+<tr>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=57417&amp;R=0">Hitchin</a></td>
+<td class="times">0142</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=KNGX++++&amp;J=57417&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=FC">First
+Capital Connect</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html>

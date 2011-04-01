@@ -4,8 +4,9 @@ module NationalRail
 
       include CellParser
 
-      def initialize(doc, time_parser)
-        @doc, @time_parser = doc, time_parser
+      def initialize(doc)
+        @doc = doc
+        @time_parser = TimeParser.new
       end
 
       def parse
@@ -25,10 +26,10 @@ module NationalRail
         previous_calling_points = []
         table = @doc/"table[@summary='Previous calling points']"
         if table.any?
-          (table/"tbody tr").reverse.each do |tr|
+          (table/"tbody tr").each do |tr|
             tds = tr/"td"
             next unless tds.length == 4
-            previous_calling_points.unshift({
+            previous_calling_points.push({
               :station => cell_text(tds[0]),
               :timetabled_departure => @time_parser.parse(cell_text(tds[1])),
               :expected_departure => @time_parser.parse(cell_text(tds[2])),

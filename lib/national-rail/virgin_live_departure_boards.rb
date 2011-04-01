@@ -13,15 +13,22 @@ module NationalRail
       end
     end
     class TimeParser
-      def initialize(date = Date.today)
-        @date = date
+      def initialize(time = Time.zone.now)
+        @time = time
       end
       def parse(value)
         value = value.gsub(%r{&#\d+;}, '').gsub(%r{\*+$}, '')
         return value if ['On time', 'Starts here', 'No report', 'Cancelled', 'Delayed'].include?(value)
         parts = value.scan(%r{\d{2}})
         return nil unless parts.length == 2
-        Time.zone.parse("#{@date} #{parts.join(':')}")
+        hhmm = parts.join(':')
+        time = Time.zone.parse("#{@time.to_date} #{hhmm}")
+        if time > 12.hours.from_now(@time)
+          time = Time.zone.parse("#{@time.to_date - 1} #{hhmm}")
+        elsif time < 12.hours.ago(@time)
+          time = Time.zone.parse("#{@time.to_date + 1} #{hhmm}")
+        end
+        time
       end
     end
   end
@@ -60,10 +67,9 @@ module NationalRail
 
       def details
         @agent.transact do
-          time_parser = TimeParser.new
           page = @details_link.click
           VirginLiveDepartureBoards.capture(page, @details_link.href)
-          parser = DetailsPageParser.new(page.doc, time_parser)
+          parser = DetailsPageParser.new(page.doc)
           parser.parse
         end
       end
