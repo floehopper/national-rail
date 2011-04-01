@@ -3,8 +3,9 @@ require "bundler/setup"
 require "national-rail"
 
 Time.zone = "London"
+NationalRail::VirginLiveDepartureBoards.capture_path = File.join(File.dirname(__FILE__), "capture")
 boards = NationalRail::VirginLiveDepartureBoards.new
-boards.summary("DHM").each do |row|
+boards.summary("KGX").each do |row|
   puts
   puts "Summary :-"
   p row.attributes
