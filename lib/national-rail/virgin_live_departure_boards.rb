@@ -98,7 +98,7 @@ module NationalRail
       @agent.get("http://realtime.nationalrail.co.uk/virgintrains/#{filename}") do |page|
         VirginLiveDepartureBoards.capture(page, filename)
         encoding = 'UTF-8'
-        summary_rows = (page.doc/"table#TrainTable tbody tr")[2..-1].map do |tr|
+        summary_rows = ((page.doc/"table#TrainTable tbody tr")[2..-1] || []).map do |tr|
           tds = tr/"td"
           details_href = (tds[0]/"a").first["href"]
           details_link = page.links.detect { |l| l.attributes["href"] == details_href }
