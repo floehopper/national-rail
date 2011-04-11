@@ -24,7 +24,7 @@ spec = Gem::Specification.new do |s|
 
   # Change these as appropriate
   s.name              = "national-rail"
-  s.version           = "0.4.10"
+  s.version           = NationalRail::VERSION
   s.summary           = "A Ruby API for the National Rail website"
   s.description       = "Includes journey planner, live departure boards (both National Rail & Virgin), and a station list with GPS co-ordinates."
   s.author            = "James Mead"
