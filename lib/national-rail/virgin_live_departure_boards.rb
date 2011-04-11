@@ -98,21 +98,26 @@ module NationalRail
       @agent.get("http://realtime.nationalrail.co.uk/virgintrains/#{filename}") do |page|
         VirginLiveDepartureBoards.capture(page, filename)
         encoding = 'UTF-8'
-        summary_rows = ((page.doc/"table#TrainTable tbody tr")[2..-1] || []).map do |tr|
+        tbody = page.doc/"table#TrainTable tbody"
+        columns = (((tbody/"tr")[1])/"th").map { |th| th.inner_text.gsub(/\s+/, ' ') }
+        summary_rows = ((tbody/"tr")[2..-1] || []).map do |tr|
           tds = tr/"td"
-          details_href = (tds[0]/"a").first["href"]
+          details_href = (tds[columns.index("From")]/"a").first["href"]
           details_link = page.links.detect { |l| l.attributes["href"] == details_href }
-          SummaryRow.new(@agent, details_link, {
-            :from => (tds[0]/"a").inner_text.gsub(/\s+/, ' '),
-            :timetabled_arrival => time_parser.parse(cell_text(tds[1])),
-            :expected_arrival => time_parser.parse(cell_text(tds[2])),
-            :platform => parse_integer(cell_text(tds[3])),
-            :to => (tds[4]/"a").inner_text.gsub(/\s+/, ' '),
-            :timetabled_departure => time_parser.parse(cell_text(tds[5])),
-            :expected_departure => time_parser.parse(cell_text(tds[6])),
-            :operator => (tds[7]/"a").inner_text.gsub(/\s+/, ' '),
+          attributes = {
+            :from => (tds[columns.index("From")]/"a").inner_text.gsub(/\s+/, ' '),
+            :timetabled_arrival => time_parser.parse(cell_text(tds[columns.index("Timetabled Arrival")])),
+            :expected_arrival => time_parser.parse(cell_text(tds[columns.index("Expected Arrival")])),
+            :to => (tds[columns.index("To")]/"a").inner_text.gsub(/\s+/, ' '),
+            :timetabled_departure => time_parser.parse(cell_text(tds[columns.index("Timetabled Departure")])),
+            :expected_departure => time_parser.parse(cell_text(tds[columns.index("Expected Departure")])),
+            :operator => (tds[columns.index("Operator")]/"a").inner_text.gsub(/\s+/, ' '),
             :details_url => "http://realtime.nationalrail.co.uk/virgintrains/#{details_href}"
-          })
+          }
+          if platform_index = columns.index("Platform")
+            attributes[:platform] = parse_integer(cell_text(tds[platform_index]))
+          end
+          SummaryRow.new(@agent, details_link, attributes)
         end
       end
       summary_rows

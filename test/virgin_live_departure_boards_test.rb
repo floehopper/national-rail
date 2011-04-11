@@ -68,6 +68,13 @@ class VirginLiveDepartureBoardsTest < Test::Unit::TestCase
     assert_equal [nil, nil, time_tomorrow("00:04"), time_tomorrow("00:06"), time_tomorrow("00:11"), nil, nil, time_tomorrow("00:36"), nil, time_tomorrow("01:06"), time_tomorrow("01:36"), nil], rows.map { |r| r[:timetabled_departure] }
   end
 
+  def test_sample_3
+    stub_request(:get, "realtime.nationalrail.co.uk/virgintrains/summary.aspx?T=ABD").to_return(html_body("fixtures/virgin_live_departure_boards/2011-04-07-2159.15/summary.aspx?T=ABD"))
+    Timecop.travel(Time.zone.parse("2011-04-07 21:59:15"))
+
+    rows = @boards.summary("ABD")
+  end
+
   private
 
   def html_body(filename)
