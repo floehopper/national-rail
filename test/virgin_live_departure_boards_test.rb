@@ -13,7 +13,7 @@ class VirginLiveDepartureBoardsTest < Test::Unit::TestCase
     Timecop.return
   end
 
-  def test_sample_1
+  def test_parsing
     stub_request(:get, "realtime.nationalrail.co.uk/virgintrains/summary.aspx?T=NCL").to_return(html_body("fixtures/virgin_live_departure_boards/2010-12-28-1254.22/summary.aspx?T=NCL"))
     Timecop.travel(Time.zone.parse("2010-12-28 12:54:22"))
     rows = @boards.summary("NCL")
@@ -58,7 +58,7 @@ class VirginLiveDepartureBoardsTest < Test::Unit::TestCase
     assert_equal ['London Kings Cross', '**Terminates**', 'Morpeth', '**Terminates**', '**Terminates**'], rows[2..6].map { |r| r[:to] }
   end
 
-  def test_sample_2
+  def test_over_date_change
     stub_request(:get, "realtime.nationalrail.co.uk/virgintrains/summary.aspx?T=KGX").to_return(html_body("fixtures/virgin_live_departure_boards/2011-02-14-2346.10/summary.aspx?T=KGX"))
     Timecop.travel(Time.zone.parse("2011-02-14 23:46:10"))
 
@@ -68,11 +68,31 @@ class VirginLiveDepartureBoardsTest < Test::Unit::TestCase
     assert_equal [nil, nil, time_tomorrow("00:04"), time_tomorrow("00:06"), time_tomorrow("00:11"), nil, nil, time_tomorrow("00:36"), nil, time_tomorrow("01:06"), time_tomorrow("01:36"), nil], rows.map { |r| r[:timetabled_departure] }
   end
 
-  def test_sample_3
+  def test_without_platform_column
     stub_request(:get, "realtime.nationalrail.co.uk/virgintrains/summary.aspx?T=ABD").to_return(html_body("fixtures/virgin_live_departure_boards/2011-04-07-2159.15/summary.aspx?T=ABD"))
     Timecop.travel(Time.zone.parse("2011-04-07 21:59:15"))
 
     rows = @boards.summary("ABD")
+
+    assert_equal "Glasgow Queen Street", rows[0][:from]
+    assert_equal Time.zone.parse("2011-04-07 22:13"), rows[0][:timetabled_arrival]
+
+    assert_equal "Aberdeen", rows[1][:from]
+    assert_equal Time.zone.parse("2011-04-07 22:30"), rows[1][:timetabled_departure]
+  end
+
+  def test_circular_route
+    stub_request(:get, "realtime.nationalrail.co.uk/virgintrains/summary.aspx?T=GLC").to_return(html_body("fixtures/virgin_live_departure_boards/2011-04-07-2155.26/summary.aspx?T=GLC"))
+    Timecop.travel(Time.zone.parse("2011-04-07 21:55:26"))
+
+    rows = @boards.summary("GLC")
+
+    assert_equal "Glasgow Central", rows[17][:from]
+    assert_equal Time.zone.parse("2011-04-07 22:15"), rows[17][:timetabled_departure]
+    assert_equal true, rows[17][:circular_route]
+
+    assert_equal "Newton", rows[18][:from]
+    assert_equal Time.zone.parse("2011-04-07 22:15"), rows[18][:timetabled_arrival]
   end
 
   private

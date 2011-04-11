@@ -1,0 +1,1477 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta name="generator" content=
+"HTML Tidy for Mac OS X (vers 31 October 2006 - Apple Inc. build 15.3.6), see www.w3.org" />
+<meta http-equiv="Content-Type" content=
+"text/html; charset=us-ascii" />
+<style type="text/css" media="all">
+/*<![CDATA[*/
+@import "/virgintrains/virgintrains/virgintrains.css";
+/*]]>*/
+</style>
+
+<style type="text/css" media="screen">
+/*<![CDATA[*/
+@import "/virgintrains/virgintrains/screen.css";
+/*]]>*/
+</style>
+
+<style type="text/css" media="print">
+/*<![CDATA[*/
+@import "/virgintrains/virgintrains/print.css";
+/*]]>*/
+</style>
+<link rel="SHORTCUT ICON" href=
+"/virgintrains/virgintrains/favicon.ico" />
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="expires" content="now" />
+<meta http-equiv="pics-label" content=
+'(pics-1.1 "http://www.icra.org/ratingsv02.html" comment "ICRAonline v2.0" l gen true for "http://www.livedepartureboards.co.uk" r (nz 1 vz 1 lz 1 oz 1 cz 1) "http://www.rsac.org/ratingsv01.html" l gen true for "http://www.livedepartureboards.co.uk" r (n 0 s 0 v 0 l 0))' />
+<title>Glasgow Central Train Times</title>
+</head>
+<body>
+<div id="Vhead" title="Virgin Trains graphic header">
+<div id="Vlogo" title="Virgin Trains logo"></div>
+</div>
+<div class="LDBsummary">
+<div class="LDBstation" title="Station overview">
+<h1>Train Times for Glasgow Central (GLC)</h1>
+<ul>
+<li>Call <a href=
+"http://www.nationalrail.co.uk/passenger_services/info_on_the_move/traintracker.html">
+TrainTracker</a>&acirc;&bdquo;&cent; for Glasgow Central on
+0871&Acirc;&nbsp;200&Acirc;&nbsp;49&Acirc;&nbsp;45 or text GLC to
+84950 to use <a href=
+"http://www.nationalrail.co.uk/passenger_services/info_on_the_move/traintrackertext.html">
+TrainTracker&acirc;&bdquo;&cent; Text</a></li>
+<li><a href=
+"http://www.nationalrail.co.uk/stations/index.html?a=findStation&amp;station_query=GLC">
+Information about Glasgow Central station.</a></li>
+<li>These train times are produced by an automated system. <a href=
+"http://www.nationalrail.co.uk/times_fares/live_departure_boards/limitations.htm">
+Our disclaimer</a> explains its limitations.</li>
+<li>This page does not automatically update. <a href=
+"summary.aspx?T=GLC&amp;R=1">Click here for a version that
+automatically updates every 2 minutes.</a></li>
+<li><a href=
+"http://www.nationalrail.co.uk/service_bulletins/today.html">Click
+here for details of engineering works and service
+alterations.</a></li>
+</ul>
+</div>
+<div class="LDBboard" title="Train Departure board">
+<table id="TrainTable" title="Train Departure board" summary=
+"Train Departure board">
+<colgroup>
+<col class="stations" />
+<col class="times" />
+<col class="ontime" />
+<col class="times" />
+<col class="stations" />
+<col class="times" />
+<col class="ontime" />
+<col class="tocs" />
+<col /></colgroup>
+<tbody>
+<tr>
+<td class="service">Trains</td>
+<td class="lastupdate" title="Last update time" colspan="7">Last
+updated: 07/04/2011 21:55:26</td>
+</tr>
+<tr>
+<th scope="col" class="stations">From</th>
+<th scope="col" class="times" abbr="at">Timetabled<br />
+Arrival</th>
+<th scope="col" class="ontime" abbr="expected">Expected<br />
+Arrival</th>
+<th scope="col" class="times" abbr="platform">Platform</th>
+<th scope="col" class="stations">To</th>
+<th scope="col" class="times" abbr="at">Timetabled<br />
+Departure</th>
+<th scope="col" class="ontime" abbr="expected">Expected<br />
+Departure</th>
+<th scope="col" class="tocs">Operator</th>
+</tr>
+<tr class="altrows">
+<td><a href="term.aspx?T=GLGC++++&amp;J=130589&amp;R=0">London
+Euston</a></td>
+<td class="times">2147</td>
+<td class="late">2159</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=130589&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=VT">Virgin
+Trains</a></td>
+</tr>
+<tr>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=132660&amp;R=0">Dalmuir</a></td>
+<td class="times">2156</td>
+<td class="ontime">On time</td>
+<td class="times">16</td>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=132660&amp;R=0">Larkhall</a></td>
+<td class="times">2157</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="term.aspx?T=GLGC++++&amp;J=138456&amp;R=0">East
+Kilbride</a></td>
+<td class="times">2157</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=138456&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=129560&amp;R=0">Lanark</a></td>
+<td class="times">2156</td>
+<td class="times">2158</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=129560&amp;R=0">Milngavie</a></td>
+<td class="times">2158</td>
+<td class="times">2159</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=132278&amp;R=0">Neilston</a></td>
+<td class="times">2159</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=132278&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=GLGC++++&amp;J=139811&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">15</td>
+<td><a href=
+"train.aspx?T=GLGC++++&amp;J=139811&amp;R=0">Ayr</a></td>
+<td class="times">2200</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="term.aspx?T=GLGC++++&amp;J=130598&amp;R=0">London
+Euston</a></td>
+<td class="times">2201</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=130598&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=VT">Virgin
+Trains</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=GLGC++++&amp;J=131899&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGC++++&amp;J=131899&amp;R=0">Gourock</a></td>
+<td class="times">2205</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=GLGC++++&amp;J=135143&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGC++++&amp;J=135143&amp;R=0">Neilston</a></td>
+<td class="times">2205</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=130984&amp;R=0">Whifflet</a></td>
+<td class="times">2205</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=130984&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=129950&amp;R=0">Milngavie</a></td>
+<td class="times">2205</td>
+<td class="ontime">On time</td>
+<td class="times">16</td>
+<td><a href="train.aspx?T=GLGCLL++&amp;J=129950&amp;R=0">Coatbridge
+Central</a></td>
+<td class="times">2206</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=132556&amp;R=0">Larkhall</a></td>
+<td class="times">2207</td>
+<td class="ontime">On time</td>
+<td class="times">17</td>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=132556&amp;R=0">Dalmuir</a> via
+Singer</td>
+<td class="times">2207</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=GLGC++++&amp;J=140253&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href="train.aspx?T=GLGC++++&amp;J=140253&amp;R=0">Paisley
+Canal</a></td>
+<td class="times">2208</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=130047&amp;R=0">Ayr</a></td>
+<td class="times">2209</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=130047&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=GLGC++++&amp;J=130387&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGC++++&amp;J=130387&amp;R=0">Stranraer</a> via
+Kilmarnock</td>
+<td class="times">2212</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=130639&amp;R=0">Kilmarnock</a></td>
+<td class="times">2213</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=130639&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=GLGC++++&amp;J=133357&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href="train.aspx?T=GLGC++++&amp;J=133357&amp;R=0">Ardrossan
+Town</a></td>
+<td class="times">2214</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=GLGC++++&amp;J=135301&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href="train.aspx?T=GLGC++++&amp;J=135301&amp;R=0">Glasgow
+Central</a> via Maxwell Park &amp; Cathcart</td>
+<td class="times">2215</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td colspan="8" class="circular">*** Circular route ***</td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=115977&amp;R=0">Newton</a></td>
+<td class="times">2215</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=115977&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=138429&amp;R=0">Gourock</a></td>
+<td class="times">2215</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=138429&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=137802&amp;R=0">Lanark</a></td>
+<td class="times">2216</td>
+<td class="ontime">On time</td>
+<td class="times">17</td>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=137802&amp;R=0">Partick</a></td>
+<td class="times">2216</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=GLGC++++&amp;J=128751&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGC++++&amp;J=128751&amp;R=0">Whifflet</a> via
+Carmyle</td>
+<td class="times">2216</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=137718&amp;R=0">Partick</a></td>
+<td class="times">2216</td>
+<td class="ontime">On time</td>
+<td class="times">16</td>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=137718&amp;R=0">Motherwell</a></td>
+<td class="times">2217</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=GLGC++++&amp;J=140075&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href="train.aspx?T=GLGC++++&amp;J=140075&amp;R=0">East
+Kilbride</a></td>
+<td class="times">2218</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="term.aspx?T=GLGC++++&amp;J=140241&amp;R=0">Paisley
+Canal</a></td>
+<td class="times">2219</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=140241&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=GLGC++++&amp;J=116033&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGC++++&amp;J=116033&amp;R=0">Newton</a></td>
+<td class="times">2220</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="term.aspx?T=GLGC+++2&amp;J=115424&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">2220</td>
+<td class="times">2150</td>
+<td class="times">10</td>
+<td><a href=
+"term.aspx?T=GLGC+++2&amp;J=115424&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href="term.aspx?T=GLGC++++&amp;J=133359&amp;R=0">Ardrossan
+Harbour</a></td>
+<td class="times">2222</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=133359&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=137542&amp;R=0">Gourock</a></td>
+<td class="times">2226</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=137542&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=132785&amp;R=0">Dalmuir</a></td>
+<td class="times">2226</td>
+<td class="ontime">On time</td>
+<td class="times">16</td>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=132785&amp;R=0">Larkhall</a></td>
+<td class="times">2227</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="term.aspx?T=GLGC++++&amp;J=137634&amp;R=0">East
+Kilbride</a></td>
+<td class="times">2227</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=137634&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=129677&amp;R=0">Motherwell</a></td>
+<td class="times">2226</td>
+<td class="ontime">On time</td>
+<td class="times">17</td>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=129677&amp;R=0">Milngavie</a></td>
+<td class="times">2228</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=132551&amp;R=0">Neilston</a></td>
+<td class="times">2229</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=132551&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=GLGC++++&amp;J=130053&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGC++++&amp;J=130053&amp;R=0">Ayr</a></td>
+<td class="times">2230</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=119474&amp;R=0">Plymouth</a></td>
+<td class="times">2230</td>
+<td class="late">2251</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=119474&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=XC">CrossCountry</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=GLGC++++&amp;J=130661&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGC++++&amp;J=130661&amp;R=0">Kilmarnock</a></td>
+<td class="times">2233</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=130407&amp;R=0">Stranraer</a></td>
+<td class="times">2234</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=130407&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=GLGC++++&amp;J=135308&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGC++++&amp;J=135308&amp;R=0">Neilston</a></td>
+<td class="times">2235</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=GLGC++++&amp;J=140006&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href="train.aspx?T=GLGC++++&amp;J=140006&amp;R=0">Wemyss
+Bay</a></td>
+<td class="times">2235</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=139827&amp;R=0">Ayr</a></td>
+<td class="times">2236</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=139827&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=132688&amp;R=0">Larkhall</a></td>
+<td class="times">2237</td>
+<td class="ontime">On time</td>
+<td class="times">17</td>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=132688&amp;R=0">Dalmuir</a> via
+Singer</td>
+<td class="times">2237</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=130045&amp;R=0">Milngavie</a></td>
+<td class="times">2235</td>
+<td class="ontime">On time</td>
+<td class="times">16</td>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=130045&amp;R=0">Motherwell</a></td>
+<td class="times">2237</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=GLGC++++&amp;J=140342&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href="train.aspx?T=GLGC++++&amp;J=140342&amp;R=0">Paisley
+Canal</a></td>
+<td class="times">2238</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=131030&amp;R=0">Whifflet</a></td>
+<td class="times">2238</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=131030&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="term.aspx?T=GLGC++++&amp;J=130684&amp;R=0">London
+Euston</a></td>
+<td class="times">2239</td>
+<td class="times">2243</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=130684&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=VT">Virgin
+Trains</a></td>
+</tr>
+<tr>
+<td><a href="term.aspx?T=GLGC++++&amp;J=140112&amp;R=0">Wemyss
+Bay</a></td>
+<td class="times">2242</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=140112&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="term.aspx?T=GLGC+++2&amp;J=135301&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">2244</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC+++2&amp;J=135301&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=GLGC++++&amp;J=134875&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGC++++&amp;J=134875&amp;R=0">Largs</a></td>
+<td class="times">2245</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=GLGC++++&amp;J=139870&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href="train.aspx?T=GLGC++++&amp;J=139870&amp;R=0">Newton</a>
+via Maxwell Park</td>
+<td class="times">2245</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=137922&amp;R=0">Motherwell</a></td>
+<td class="times">2246</td>
+<td class="ontime">On time</td>
+<td class="times">17</td>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=137922&amp;R=0">Partick</a></td>
+<td class="times">2246</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=GLGC++++&amp;J=130541&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGC++++&amp;J=130541&amp;R=0">Whifflet</a> via
+Carmyle</td>
+<td class="times">2246</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=134832&amp;R=0">Partick</a></td>
+<td class="times">2246</td>
+<td class="ontime">On time</td>
+<td class="times">16</td>
+<td><a href="train.aspx?T=GLGCLL++&amp;J=134832&amp;R=0">Lanark</a>
+via Bellshill &amp; Shieldmuir</td>
+<td class="times">2247</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=GLGC++++&amp;J=137804&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href="train.aspx?T=GLGC++++&amp;J=137804&amp;R=0">East
+Kilbride</a></td>
+<td class="times">2248</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href="term.aspx?T=GLGC++++&amp;J=140326&amp;R=0">Paisley
+Canal</a></td>
+<td class="times">2249</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=140326&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=GLGC++++&amp;J=137271&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGC++++&amp;J=137271&amp;R=0">Gourock</a></td>
+<td class="times">2250</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=GLGC++++&amp;J=115492&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href="train.aspx?T=GLGC++++&amp;J=115492&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">2250</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td colspan="8" class="circular">*** Circular route ***</td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=139830&amp;R=0">Newton</a></td>
+<td class="times">2250</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=139830&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=133131&amp;R=0">Largs</a></td>
+<td class="times">2254</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=133131&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=138774&amp;R=0">Edinburgh</a></td>
+<td class="times">2255</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=138774&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=132829&amp;R=0">Dalmuir</a></td>
+<td class="times">2256</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=132829&amp;R=0">Larkhall</a></td>
+<td class="times">2257</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="term.aspx?T=GLGC++++&amp;J=138570&amp;R=0">East
+Kilbride</a></td>
+<td class="times">2257</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=138570&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=129693&amp;R=0">Lanark</a></td>
+<td class="times">2256</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=129693&amp;R=0">Milngavie</a></td>
+<td class="times">2258</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=135167&amp;R=0">Neilston</a></td>
+<td class="times">2259</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=135167&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=GLGC++++&amp;J=139835&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGC++++&amp;J=139835&amp;R=0">Ayr</a></td>
+<td class="times">2300</td>
+<td class="noinfo">Starts here</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="term.aspx?T=GLGC++++&amp;J=130696&amp;R=0">London
+Euston</a></td>
+<td class="times">2304</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=130696&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=VT">Virgin
+Trains</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=GLGC++++&amp;J=135598&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGC++++&amp;J=135598&amp;R=0">Neilston</a></td>
+<td class="times">2305</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=128504&amp;R=0">Whifflet</a></td>
+<td class="times">2305</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=128504&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=GLGC++++&amp;J=138921&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGC++++&amp;J=138921&amp;R=0">Edinburgh</a> via
+Shotts</td>
+<td class="times">2306</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=132811&amp;R=0">Larkhall</a></td>
+<td class="times">2307</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=132811&amp;R=0">Dalmuir</a> via
+Singer</td>
+<td class="times">2307</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=130051&amp;R=0">Milngavie</a></td>
+<td class="times">2305</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=130051&amp;R=0">Motherwell</a></td>
+<td class="times">2307</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=GLGC++++&amp;J=115394&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href="train.aspx?T=GLGC++++&amp;J=115394&amp;R=0">Paisley
+Canal</a></td>
+<td class="times">2308</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=130059&amp;R=0">Ayr</a></td>
+<td class="times">2309</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=130059&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=GLGC++++&amp;J=130747&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGC++++&amp;J=130747&amp;R=0">Dumfries</a></td>
+<td class="times">2312</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=130653&amp;R=0">Kilmarnock</a></td>
+<td class="times">2313</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=130653&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=138597&amp;R=0">Gourock</a></td>
+<td class="times">2314</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=138597&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=GLGC++++&amp;J=133395&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGC++++&amp;J=133395&amp;R=0">Largs</a></td>
+<td class="times">2315</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=GLGC++++&amp;J=135330&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href="train.aspx?T=GLGC++++&amp;J=135330&amp;R=0">Glasgow
+Central</a> via Maxwell Park &amp; Cathcart</td>
+<td class="times">2315</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td colspan="8" class="circular">*** Circular route ***</td>
+</tr>
+<tr>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=116071&amp;R=0">Newton</a></td>
+<td class="times">2315</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=116071&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=138069&amp;R=0">Lanark</a></td>
+<td class="times">2316</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=138069&amp;R=0">Garscadden</a></td>
+<td class="times">2316</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=GLGC++++&amp;J=130638&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGC++++&amp;J=130638&amp;R=0">Whifflet</a> via
+Carmyle</td>
+<td class="times">2316</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=138047&amp;R=0">Partick</a></td>
+<td class="times">2316</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=138047&amp;R=0">Motherwell</a></td>
+<td class="times">2317</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=GLGC++++&amp;J=137926&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href="train.aspx?T=GLGC++++&amp;J=137926&amp;R=0">East
+Kilbride</a></td>
+<td class="times">2318</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="term.aspx?T=GLGC++++&amp;J=130776&amp;R=0">Birmingham
+New Street</a></td>
+<td class="times">2318</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=130776&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=VT">Virgin
+Trains</a></td>
+</tr>
+<tr>
+<td><a href="term.aspx?T=GLGC++++&amp;J=115380&amp;R=0">Paisley
+Canal</a></td>
+<td class="times">2319</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=115380&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=GLGC++++&amp;J=131791&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGC++++&amp;J=131791&amp;R=0">Gourock</a></td>
+<td class="times">2320</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=GLGC++++&amp;J=125349&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGC++++&amp;J=125349&amp;R=0">Newton</a></td>
+<td class="times">2320</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="term.aspx?T=GLGC+++2&amp;J=115492&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">2320</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC+++2&amp;J=115492&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=139995&amp;R=0">Stranraer</a></td>
+<td class="times">2325</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=139995&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=132945&amp;R=0">Dalmuir</a></td>
+<td class="times">2326</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=132945&amp;R=0">Larkhall</a></td>
+<td class="times">2327</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href="term.aspx?T=GLGC++++&amp;J=137728&amp;R=0">East
+Kilbride</a></td>
+<td class="times">2327</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=137728&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=129809&amp;R=0">Motherwell</a></td>
+<td class="times">2326</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=129809&amp;R=0">Milngavie</a></td>
+<td class="times">2328</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=135486&amp;R=0">Neilston</a></td>
+<td class="times">2329</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=135486&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=GLGC++++&amp;J=130063&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGC++++&amp;J=130063&amp;R=0">Ayr</a></td>
+<td class="times">2330</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href="term.aspx?T=GLGC++++&amp;J=117094&amp;R=0">London
+Kings Cross</a></td>
+<td class="times">2332</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=117094&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=GR">East Coast
+Mainline</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=128588&amp;R=0">Whifflet</a></td>
+<td class="times">2335</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=128588&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=117198&amp;R=0">Carlisle</a></td>
+<td class="times">2336</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=117198&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=132921&amp;R=0">Larkhall</a></td>
+<td class="times">2337</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGCLL++&amp;J=132921&amp;R=0">Garscadden</a></td>
+<td class="times">2337</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=GLGC++++&amp;J=125045&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href="train.aspx?T=GLGC++++&amp;J=125045&amp;R=0">London
+Euston</a></td>
+<td class="times">2340</td>
+<td class="noinfo">Starts here</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="term.aspx?T=GLGC++++&amp;J=140012&amp;R=0">Wemyss
+Bay</a></td>
+<td class="times">2342</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=140012&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href="term.aspx?T=GLGC+++2&amp;J=135330&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">2344</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC+++2&amp;J=135330&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href="train.aspx?T=GLGC++++&amp;J=132840&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href="train.aspx?T=GLGC++++&amp;J=132840&amp;R=0">Ardrossan
+South Beach</a></td>
+<td class="times">2345</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href="train.aspx?T=GLGC++++&amp;J=131773&amp;R=0">Glasgow
+Central</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"train.aspx?T=GLGC++++&amp;J=131773&amp;R=0">Gourock</a></td>
+<td class="times">2350</td>
+<td class="ontime">On time</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr class="altrows">
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=139990&amp;R=0">Newton</a></td>
+<td class="times">2350</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=139990&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+<tr>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=134725&amp;R=0">Largs</a></td>
+<td class="times">2354</td>
+<td class="ontime">On time</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td><a href=
+"term.aspx?T=GLGC++++&amp;J=134725&amp;R=0">**Terminates**</a></td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="times">&Acirc;&nbsp;</td>
+<td class="tocs"><a href=
+"http://www.nationalrail.co.uk/companies/?atocCode=SR">ScotRail</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html>

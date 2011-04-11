@@ -100,9 +100,15 @@ module NationalRail
         encoding = 'UTF-8'
         tbody = page.doc/"table#TrainTable tbody"
         columns = (((tbody/"tr")[1])/"th").map { |th| th.inner_text.gsub(/\s+/, ' ') }
-        summary_rows = ((tbody/"tr")[2..-1] || []).map do |tr|
+        summary_rows = []
+        ((tbody/"tr")[2..-1] || []).each do |tr|
           tds = tr/"td"
-          details_href = (tds[columns.index("From")]/"a").first["href"]
+          from = tds[columns.index("From")]
+          if from.inner_text.match(/circular route/i)
+            summary_rows.last.attributes[:circular_route] = true if summary_rows.any?
+            next
+          end
+          details_href = (from/"a").first["href"]
           details_link = page.links.detect { |l| l.attributes["href"] == details_href }
           attributes = {
             :from => (tds[columns.index("From")]/"a").inner_text.gsub(/\s+/, ' '),
@@ -117,7 +123,7 @@ module NationalRail
           if platform_index = columns.index("Platform")
             attributes[:platform] = parse_integer(cell_text(tds[platform_index]))
           end
-          SummaryRow.new(@agent, details_link, attributes)
+          summary_rows << SummaryRow.new(@agent, details_link, attributes)
         end
       end
       summary_rows
