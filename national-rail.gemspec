@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{national-rail}
-  s.version = "0.4.12"
+  s.version = "0.4.13"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["James Mead"]
-  s.date = %q{2011-04-12}
+  s.date = %q{2011-04-13}
   s.description = %q{Includes journey planner, live departure boards (both National Rail & Virgin), and a station list with GPS co-ordinates.}
   s.email = %q{james@floehopper.org}
   s.files = ["lib/national-rail", "lib/national-rail.rb", "lib/national-rail/journey_planner", "lib/national-rail/journey_planner.rb", "lib/national-rail/journey_planner/details_page_parser.rb", "lib/national-rail/live_departure_boards.rb", "lib/national-rail/station_list.rb", "lib/national-rail/stations.kml", "lib/national-rail/version.rb", "lib/national-rail/virgin_live_departure_boards", "lib/national-rail/virgin_live_departure_boards.rb", "lib/national-rail/virgin_live_departure_boards/details_page_parser.rb"]
