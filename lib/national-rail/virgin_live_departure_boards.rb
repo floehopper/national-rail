@@ -99,31 +99,36 @@ module NationalRail
         VirginLiveDepartureBoards.capture(page, filename)
         encoding = 'UTF-8'
         tbody = page.doc/"table#TrainTable tbody"
-        columns = (((tbody/"tr")[1])/"th").map { |th| th.inner_text.gsub(/\s+/, ' ') }
-        summary_rows = []
-        ((tbody/"tr")[2..-1] || []).each do |tr|
-          tds = tr/"td"
-          from = tds[columns.index("From")]
-          if from.inner_text.match(/circular route/i)
-            summary_rows.last.attributes[:circular_route] = true if summary_rows.any?
-            next
+        if tbody
+          trs = tbody/"tr"
+          if trs.length > 2
+            columns = ((trs[1])/"th").map { |th| th.inner_text.gsub(/\s+/, ' ') }
+            summary_rows = []
+            ((tbody/"tr")[2..-1] || []).each do |tr|
+              tds = tr/"td"
+              from = tds[columns.index("From")]
+              if from.inner_text.match(/circular route/i)
+                summary_rows.last.attributes[:circular_route] = true if summary_rows.any?
+                next
+              end
+              details_href = (from/"a").first["href"]
+              details_link = page.links.detect { |l| l.attributes["href"] == details_href }
+              attributes = {
+                :from => (tds[columns.index("From")]/"a").inner_text.gsub(/\s+/, ' '),
+                :timetabled_arrival => time_parser.parse(cell_text(tds[columns.index("Timetabled Arrival")])),
+                :expected_arrival => time_parser.parse(cell_text(tds[columns.index("Expected Arrival")])),
+                :to => (tds[columns.index("To")]/"a").inner_text.gsub(/\s+/, ' '),
+                :timetabled_departure => time_parser.parse(cell_text(tds[columns.index("Timetabled Departure")])),
+                :expected_departure => time_parser.parse(cell_text(tds[columns.index("Expected Departure")])),
+                :operator => (tds[columns.index("Operator")]/"a").inner_text.gsub(/\s+/, ' '),
+                :details_url => "http://realtime.nationalrail.co.uk/virgintrains/#{details_href}"
+              }
+              if platform_index = columns.index("Platform")
+                attributes[:platform] = parse_integer(cell_text(tds[platform_index]))
+              end
+              summary_rows << SummaryRow.new(@agent, details_link, attributes)
+            end
           end
-          details_href = (from/"a").first["href"]
-          details_link = page.links.detect { |l| l.attributes["href"] == details_href }
-          attributes = {
-            :from => (tds[columns.index("From")]/"a").inner_text.gsub(/\s+/, ' '),
-            :timetabled_arrival => time_parser.parse(cell_text(tds[columns.index("Timetabled Arrival")])),
-            :expected_arrival => time_parser.parse(cell_text(tds[columns.index("Expected Arrival")])),
-            :to => (tds[columns.index("To")]/"a").inner_text.gsub(/\s+/, ' '),
-            :timetabled_departure => time_parser.parse(cell_text(tds[columns.index("Timetabled Departure")])),
-            :expected_departure => time_parser.parse(cell_text(tds[columns.index("Expected Departure")])),
-            :operator => (tds[columns.index("Operator")]/"a").inner_text.gsub(/\s+/, ' '),
-            :details_url => "http://realtime.nationalrail.co.uk/virgintrains/#{details_href}"
-          }
-          if platform_index = columns.index("Platform")
-            attributes[:platform] = parse_integer(cell_text(tds[platform_index]))
-          end
-          summary_rows << SummaryRow.new(@agent, details_link, attributes)
         end
       end
       summary_rows
