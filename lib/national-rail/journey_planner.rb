@@ -130,7 +130,8 @@ module NationalRail
       Time.zone ||= 'London'
       @agent = Mechanize.new
       @agent.pluggable_parser.html = NokogiriParser
-      @agent.user_agent_alias = "Mac FireFox"
+      aliases = Mechanize::AGENT_ALIASES.keys - %w(Mechanize)
+      @agent.user_agent_alias = aliases[rand(aliases.length)]
     end
 
     def plan(options = {})
